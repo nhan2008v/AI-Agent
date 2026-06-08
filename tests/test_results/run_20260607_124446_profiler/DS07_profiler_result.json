@@ -1,0 +1,826 @@
+{
+  "dataset_id": "DS07",
+  "file": "C:\\Users\\socia\\OneDrive\\Documents\\GitHub\\Agentic-Data-Cleaner\\tests\\dirty_datasets\\DS07_pk_dup_and_null.csv",
+  "domain": "Sản phẩm / Inventory",
+  "timestamp": "2026-06-07T12:44:47.525508",
+  "status": "PASS",
+  "profiler_result": {
+    "source": "\\tmp\\ade\\uploads\\646cdc2b9338461ab675b30a8b7b9547.parquet",
+    "total_rows": 1000,
+    "total_columns": 10,
+    "pk_candidates": [
+      "product_name"
+    ],
+    "near_unique_columns": [
+      "price"
+    ],
+    "categorical_columns": [
+      "category",
+      "brand",
+      "warehouse"
+    ],
+    "high_null_columns": [],
+    "duplicate_rows": 0,
+    "columns": [
+      {
+        "column_name": "product_id",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 750,
+        "unique_ratio": 0.75,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "PROD-000210",
+          "PROD-000206",
+          "PROD-000200",
+          "PROD-000197",
+          "PROD-000132",
+          "PROD-000214",
+          "PROD-000023",
+          "PROD-000074",
+          "PROD-000248",
+          "PROD-000054",
+          "PROD-000667",
+          "PROD-000130",
+          "PROD-000159",
+          "PROD-000153",
+          "PROD-000124",
+          "PROD-000191",
+          "PROD-000049",
+          "PROD-000016",
+          "PROD-000172",
+          "PROD-000121"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.7500 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 750,
+          "distinct_pct": 0.75,
+          "frequencies": [
+            {
+              "value": "PROD-000210",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "PROD-000206",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "PROD-000200",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "PROD-000197",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "PROD-000132",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "(Other)",
+              "count": 975,
+              "pct": 0.975
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "product_name",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 1000,
+        "unique_ratio": 1.0,
+        "unique_ratio_category": "primary_key",
+        "sample_values": [
+          "qSvCjxueaVDy",
+          "tDPiBbmeeEIK",
+          "PXDJjfCfWUYU",
+          "QdSXoKIWuOCe",
+          "jVdyybmlCkPS",
+          "nTiiBYnQavXe",
+          "pvjleZZlKJLC",
+          "FpbuQhxVbtKG",
+          "AxTiXVUQvlSF",
+          "gXtVNHFzVnhC",
+          "cauKjVhDisXO",
+          "iNSLLZKGOLZJ",
+          "jdiIRufXBFeq",
+          "GfWjnXNeqYWH",
+          "uOeMdilLOWJb",
+          "cyPiHEXofJSy",
+          "hYxqorhfHyGn",
+          "vnNjgEXeKuxY",
+          "ggVwTutJAKBq",
+          "kdPhXoWoEJqr"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 1.0 --> every row has a distinct value — strong Primary Key / ID candidate."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 1000,
+          "distinct_pct": 1.0,
+          "frequencies": [
+            {
+              "value": "qSvCjxueaVDy",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "tDPiBbmeeEIK",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "PXDJjfCfWUYU",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "QdSXoKIWuOCe",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "jVdyybmlCkPS",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 995,
+              "pct": 0.995
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "category",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 6,
+        "unique_ratio": 0.006,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "Electronics",
+          "Clothing",
+          "Furniture",
+          "Sports",
+          "Food",
+          "Books"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0060 (low) — only 6 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 6,
+          "distinct_pct": 0.006,
+          "frequencies": [
+            {
+              "value": "Electronics",
+              "count": 180,
+              "pct": 0.18
+            },
+            {
+              "value": "Clothing",
+              "count": 179,
+              "pct": 0.179
+            },
+            {
+              "value": "Furniture",
+              "count": 167,
+              "pct": 0.167
+            },
+            {
+              "value": "Sports",
+              "count": 167,
+              "pct": 0.167
+            },
+            {
+              "value": "Food",
+              "count": 159,
+              "pct": 0.159
+            },
+            {
+              "value": "(Other)",
+              "count": 148,
+              "pct": 0.148
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "brand",
+        "dtype": "str",
+        "null_count": 243,
+        "total_rows": 1000,
+        "null_rate": 0.243,
+        "unique_count": 5,
+        "unique_ratio": 0.005,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "BrandD",
+          "BrandC",
+          "BrandA",
+          "BrandE",
+          "BrandB"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "High null rate (24.30%) — column may need significant imputation or removal.",
+          "unique_ratio = 0.0050 (low) — only 5 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 757,
+          "values_pct": 0.757,
+          "missing_count": 243,
+          "missing_pct": 0.243,
+          "distinct_count": 5,
+          "distinct_pct": 0.005,
+          "frequencies": [
+            {
+              "value": "BrandD",
+              "count": 166,
+              "pct": 0.166
+            },
+            {
+              "value": "BrandC",
+              "count": 160,
+              "pct": 0.16
+            },
+            {
+              "value": "BrandA",
+              "count": 158,
+              "pct": 0.158
+            },
+            {
+              "value": "BrandE",
+              "count": 156,
+              "pct": 0.156
+            },
+            {
+              "value": "BrandB",
+              "count": 117,
+              "pct": 0.117
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "price",
+        "dtype": "str",
+        "null_count": 159,
+        "total_rows": 1000,
+        "null_rate": 0.159,
+        "unique_count": 840,
+        "unique_ratio": 0.84,
+        "unique_ratio_category": "near_unique",
+        "sample_values": [
+          "1196.55",
+          "2364.73",
+          "864.18",
+          "2628.55",
+          "892.59",
+          "4622.66",
+          "4232.92",
+          "1676.04",
+          "613.3",
+          "2130.75",
+          "1338.63",
+          "3782.21",
+          "395.55",
+          "1415.55",
+          "4152.41",
+          "3768.25",
+          "1182.4",
+          "1912.81",
+          "647.17",
+          "2680.71"
+        ],
+        "detected_patterns": [
+          "float_str"
+        ],
+        "interpretation": [
+          "Moderate null rate (15.90%) — consider imputation strategy.",
+          "unique_ratio = 0.8400 (< 1.0) — 160 duplicate value(s) detected — investigate for unintended duplicates.",
+          "String pattern detected: ['float_str'] — dtype may be refinable."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 841,
+          "values_pct": 0.841,
+          "missing_count": 159,
+          "missing_pct": 0.159,
+          "distinct_count": 840,
+          "distinct_pct": 0.84,
+          "frequencies": [
+            {
+              "value": "1196.55",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "2364.73",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "864.18",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "2628.55",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "892.59",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 835,
+              "pct": 0.835
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "stock_qty",
+        "dtype": "str",
+        "null_count": 191,
+        "total_rows": 1000,
+        "null_rate": 0.191,
+        "unique_count": 779,
+        "unique_ratio": 0.779,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "2091.0",
+          "4016.0",
+          "8482.0",
+          "6765.0",
+          "1416.0",
+          "2651.0",
+          "6161.0",
+          "7117.0",
+          "8891.0",
+          "2229.0",
+          "274.0",
+          "2662.0",
+          "8379.0",
+          "2877.0",
+          "740.0",
+          "4255.0",
+          "3499.0",
+          "9766.0",
+          "1013.0",
+          "6069.0"
+        ],
+        "detected_patterns": [
+          "float_str"
+        ],
+        "interpretation": [
+          "Moderate null rate (19.10%) — consider imputation strategy.",
+          "unique_ratio = 0.7790 — regular column (not a key, not purely categorical).",
+          "String pattern detected: ['float_str'] — dtype may be refinable."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 809,
+          "values_pct": 0.809,
+          "missing_count": 191,
+          "missing_pct": 0.191,
+          "distinct_count": 779,
+          "distinct_pct": 0.779,
+          "frequencies": [
+            {
+              "value": "2091.0",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "4016.0",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "8482.0",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "6765.0",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "1416.0",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "(Other)",
+              "count": 799,
+              "pct": 0.799
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "weight_kg",
+        "dtype": "str",
+        "null_count": 372,
+        "total_rows": 1000,
+        "null_rate": 0.372,
+        "unique_count": 622,
+        "unique_ratio": 0.622,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "30.676",
+          "20.929",
+          "38.323",
+          "45.722",
+          "33.864",
+          "2.029",
+          "45.727",
+          "3.774",
+          "1.621",
+          "24.012",
+          "49.334",
+          "2.825",
+          "39.79",
+          "0.581",
+          "9.206",
+          "21.508",
+          "17.805",
+          "26.511",
+          "47.314",
+          "22.208"
+        ],
+        "detected_patterns": [
+          "float_str"
+        ],
+        "interpretation": [
+          "High null rate (37.20%) — column may need significant imputation or removal.",
+          "unique_ratio = 0.6220 — regular column (not a key, not purely categorical).",
+          "String pattern detected: ['float_str'] — dtype may be refinable."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 628,
+          "values_pct": 0.628,
+          "missing_count": 372,
+          "missing_pct": 0.372,
+          "distinct_count": 622,
+          "distinct_pct": 0.622,
+          "frequencies": [
+            {
+              "value": "30.676",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "20.929",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "38.323",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "45.722",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "33.864",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "(Other)",
+              "count": 618,
+              "pct": 0.618
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "supplier_id",
+        "dtype": "str",
+        "null_count": 297,
+        "total_rows": 1000,
+        "null_rate": 0.297,
+        "unique_count": 494,
+        "unique_ratio": 0.494,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "SUP-526",
+          "SUP-475",
+          "SUP-260",
+          "SUP-755",
+          "SUP-955",
+          "SUP-831",
+          "SUP-556",
+          "SUP-393",
+          "SUP-877",
+          "SUP-364",
+          "SUP-722",
+          "SUP-230",
+          "SUP-860",
+          "SUP-558",
+          "SUP-137",
+          "SUP-716",
+          "SUP-148",
+          "SUP-255",
+          "SUP-848",
+          "SUP-376"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "High null rate (29.70%) — column may need significant imputation or removal.",
+          "unique_ratio = 0.4940 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 703,
+          "values_pct": 0.703,
+          "missing_count": 297,
+          "missing_pct": 0.297,
+          "distinct_count": 494,
+          "distinct_pct": 0.494,
+          "frequencies": [
+            {
+              "value": "SUP-526",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "SUP-475",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "SUP-260",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "SUP-755",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "SUP-955",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "(Other)",
+              "count": 682,
+              "pct": 0.682
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "warehouse",
+        "dtype": "str",
+        "null_count": 50,
+        "total_rows": 1000,
+        "null_rate": 0.05,
+        "unique_count": 4,
+        "unique_ratio": 0.004,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "WH-North",
+          "WH-South",
+          "WH-East",
+          "WH-West"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Very low null rate (5.00%) — acceptable for most pipelines.",
+          "unique_ratio = 0.0040 (low) — only 4 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 950,
+          "values_pct": 0.95,
+          "missing_count": 50,
+          "missing_pct": 0.05,
+          "distinct_count": 4,
+          "distinct_pct": 0.004,
+          "frequencies": [
+            {
+              "value": "WH-North",
+              "count": 262,
+              "pct": 0.262
+            },
+            {
+              "value": "WH-South",
+              "count": 247,
+              "pct": 0.247
+            },
+            {
+              "value": "WH-East",
+              "count": 237,
+              "pct": 0.237
+            },
+            {
+              "value": "WH-West",
+              "count": 204,
+              "pct": 0.204
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "last_updated",
+        "dtype": "str",
+        "null_count": 85,
+        "total_rows": 1000,
+        "null_rate": 0.085,
+        "unique_count": 766,
+        "unique_ratio": 0.766,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "2024-03-24",
+          "2019-04-13",
+          "2021-01-04",
+          "2022-05-18",
+          "2022-09-12",
+          "2024-04-21",
+          "2019-12-22",
+          "2024-02-14",
+          "2018-04-22",
+          "2018-12-05",
+          "2018-04-28",
+          "2020-10-14",
+          "2024-11-23",
+          "2024-12-27",
+          "2020-04-08",
+          "2024-03-04",
+          "2021-10-10",
+          "2021-06-26",
+          "2020-08-11",
+          "2024-09-11"
+        ],
+        "detected_patterns": [
+          "date_iso"
+        ],
+        "interpretation": [
+          "Moderate null rate (8.50%) — consider imputation strategy.",
+          "unique_ratio = 0.7660 — regular column (not a key, not purely categorical).",
+          "String pattern detected: ['date_iso'] — dtype may be refinable."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 915,
+          "values_pct": 0.915,
+          "missing_count": 85,
+          "missing_pct": 0.085,
+          "distinct_count": 766,
+          "distinct_pct": 0.766,
+          "frequencies": [
+            {
+              "value": "2024-03-24",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "2019-04-13",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "2021-01-04",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "2022-05-18",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "2022-09-12",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "(Other)",
+              "count": 900,
+              "pct": 0.9
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "profiler_summary": {
+    "total_rows": 1000,
+    "total_columns": 10,
+    "duplicate_rows": 0,
+    "pk_candidates": [
+      "product_name"
+    ],
+    "near_unique_columns": [
+      "price"
+    ],
+    "categorical_columns": [
+      "category",
+      "brand",
+      "warehouse"
+    ],
+    "high_null_columns": [],
+    "column_null_rates": {
+      "product_id": 0.0,
+      "product_name": 0.0,
+      "category": 0.0,
+      "brand": 0.243,
+      "price": 0.159,
+      "stock_qty": 0.191,
+      "weight_kg": 0.372,
+      "supplier_id": 0.297,
+      "warehouse": 0.05,
+      "last_updated": 0.085
+    },
+    "column_dtypes": {
+      "product_id": "str",
+      "product_name": "str",
+      "category": "str",
+      "brand": "str",
+      "price": "str",
+      "stock_qty": "str",
+      "weight_kg": "str",
+      "supplier_id": "str",
+      "warehouse": "str",
+      "last_updated": "str"
+    },
+    "column_unique_ratios": {
+      "product_id": 0.75,
+      "product_name": 1.0,
+      "category": 0.006,
+      "brand": 0.005,
+      "price": 0.84,
+      "stock_qty": 0.779,
+      "weight_kg": 0.622,
+      "supplier_id": 0.494,
+      "warehouse": 0.004,
+      "last_updated": 0.766
+    }
+  },
+  "validator_result": null,
+  "error": null,
+  "assertions": [
+    {
+      "check": "duplicate_detected",
+      "passed": true,
+      "detail": "duplicate_rows=0, near_unique=['price']"
+    },
+    {
+      "check": "null_detected",
+      "passed": true,
+      "detail": "high_null_cols=[]"
+    }
+  ]
+}

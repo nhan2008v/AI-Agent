@@ -1,0 +1,146 @@
+{
+  "mode": "profiler",
+  "timestamp": "2026-06-07T12:44:47.976847",
+  "total": 10,
+  "passed": 10,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "pass_rate": "100.0%",
+  "results": [
+    {
+      "id": "DS01",
+      "domain": "Bệnh nhân / Hospital",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "duplicate_detected",
+          "passed": true,
+          "detail": "duplicate_rows=500, near_unique=[]"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "DS02",
+      "domain": "Đơn hàng / E-commerce",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "duplicate_detected",
+          "passed": true,
+          "detail": "duplicate_rows=0, near_unique=['customer_id', 'order_date', 'shipping_addr']"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "DS03",
+      "domain": "Khảo sát / Survey",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "null_detected",
+          "passed": true,
+          "detail": "high_null_cols=['q1_satisfaction', 'q2_recommend', 'q3_comment', 'q4_income', 'q5_education', 'q6_occupation']"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "DS04",
+      "domain": "Nhân sự / HR",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "null_detected",
+          "passed": true,
+          "detail": "high_null_cols=[]"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "DS05",
+      "domain": "Giao dịch / Finance",
+      "status": "PASS",
+      "assertions": [],
+      "error": null
+    },
+    {
+      "id": "DS06",
+      "domain": "Điểm thi / Education",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "null_detected",
+          "passed": true,
+          "detail": "high_null_cols=[]"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "DS07",
+      "domain": "Sản phẩm / Inventory",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "duplicate_detected",
+          "passed": true,
+          "detail": "duplicate_rows=0, near_unique=['price']"
+        },
+        {
+          "check": "null_detected",
+          "passed": true,
+          "detail": "high_null_cols=[]"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "DS08",
+      "domain": "IoT Sensor",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "null_detected",
+          "passed": true,
+          "detail": "high_null_cols=['device_name', 'location', 'pressure_hpa', 'co2_ppm', 'firmware_version']"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "DS09",
+      "domain": "Hồ sơ Bệnh viện (Mega Dirty)",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "duplicate_detected",
+          "passed": true,
+          "detail": "duplicate_rows=200, near_unique=[]"
+        },
+        {
+          "check": "null_detected",
+          "passed": true,
+          "detail": "high_null_cols=[]"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "DS10",
+      "domain": "Logistics",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "null_detected",
+          "passed": true,
+          "detail": "high_null_cols=[]"
+        }
+      ],
+      "error": null
+    }
+  ]
+}

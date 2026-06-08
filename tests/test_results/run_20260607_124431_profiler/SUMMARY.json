@@ -1,0 +1,69 @@
+{
+  "mode": "profiler",
+  "timestamp": "2026-06-07T12:44:33.016328",
+  "total": 4,
+  "passed": 4,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "pass_rate": "100.0%",
+  "results": [
+    {
+      "id": "DS01",
+      "domain": "Bệnh nhân / Hospital",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "duplicate_detected",
+          "passed": true,
+          "detail": "duplicate_rows=500, near_unique=[]"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "DS02",
+      "domain": "Đơn hàng / E-commerce",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "duplicate_detected",
+          "passed": true,
+          "detail": "duplicate_rows=0, near_unique=['customer_id', 'order_date', 'shipping_addr']"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "DS03",
+      "domain": "Khảo sát / Survey",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "null_detected",
+          "passed": true,
+          "detail": "high_null_cols=['q1_satisfaction', 'q2_recommend', 'q3_comment', 'q4_income', 'q5_education', 'q6_occupation']"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "DS09",
+      "domain": "Hồ sơ Bệnh viện (Mega Dirty)",
+      "status": "PASS",
+      "assertions": [
+        {
+          "check": "duplicate_detected",
+          "passed": true,
+          "detail": "duplicate_rows=200, near_unique=[]"
+        },
+        {
+          "check": "null_detected",
+          "passed": true,
+          "detail": "high_null_cols=[]"
+        }
+      ],
+      "error": null
+    }
+  ]
+}

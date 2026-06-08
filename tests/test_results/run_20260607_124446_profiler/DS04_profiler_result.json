@@ -1,0 +1,858 @@
+{
+  "dataset_id": "DS04",
+  "file": "C:\\Users\\socia\\OneDrive\\Documents\\GitHub\\Agentic-Data-Cleaner\\tests\\dirty_datasets\\DS04_null_and_dmv.csv",
+  "domain": "Nhân sự / HR",
+  "timestamp": "2026-06-07T12:44:47.190368",
+  "status": "PASS",
+  "profiler_result": {
+    "source": "\\tmp\\ade\\uploads\\290a4f3a66d5413eafd9720563894bb5.parquet",
+    "total_rows": 1000,
+    "total_columns": 10,
+    "pk_candidates": [
+      "emp_id",
+      "full_name"
+    ],
+    "near_unique_columns": [
+      "email"
+    ],
+    "categorical_columns": [
+      "department",
+      "job_title",
+      "manager_id",
+      "performance_score"
+    ],
+    "high_null_columns": [],
+    "duplicate_rows": 0,
+    "columns": [
+      {
+        "column_name": "emp_id",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 1000,
+        "unique_ratio": 1.0,
+        "unique_ratio_category": "primary_key",
+        "sample_values": [
+          "EMP-00001",
+          "EMP-00002",
+          "EMP-00003",
+          "EMP-00004",
+          "EMP-00005",
+          "EMP-00006",
+          "EMP-00007",
+          "EMP-00008",
+          "EMP-00009",
+          "EMP-00010",
+          "EMP-00522",
+          "EMP-00738",
+          "EMP-00741",
+          "EMP-00661",
+          "EMP-00412",
+          "EMP-00679",
+          "EMP-00627",
+          "EMP-00514",
+          "EMP-00860",
+          "EMP-00137"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 1.0 --> every row has a distinct value — strong Primary Key / ID candidate."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 1000,
+          "distinct_pct": 1.0,
+          "frequencies": [
+            {
+              "value": "EMP-00001",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "EMP-00002",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "EMP-00003",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "EMP-00004",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "EMP-00005",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 995,
+              "pct": 0.995
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "full_name",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 1000,
+        "unique_ratio": 1.0,
+        "unique_ratio_category": "primary_key",
+        "sample_values": [
+          "Ngjhgi Gczmmjgl",
+          "Xdhlra Fkhlotqv",
+          "Ijxkhk Stsizxwn",
+          "Wiormb Kfoojnyn",
+          "Dxplks Ryoywgoh",
+          "Tzchhn Tnfsaqud",
+          "Xfunmx Wsdwvgya",
+          "Xrjcda Kfpnnpeg",
+          "Ixdstg Uqssnbzw",
+          "Djfumt Kvzdjywh",
+          "Ufflew Bhivrowl",
+          "Lpavph Hmxegtrl",
+          "Iaiyvo Fdfzkcku",
+          "Kwouxp Fltskoaf",
+          "Ynjnrd Ctxtnvpe",
+          "Peqdfq Gyhqfzpc",
+          "Yqlegu Loolyhmy",
+          "Jguvxw Jgkxgarp",
+          "Cybzvb Kpdppdpj",
+          "Plrenl Snfqztlf"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 1.0 --> every row has a distinct value — strong Primary Key / ID candidate."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 1000,
+          "distinct_pct": 1.0,
+          "frequencies": [
+            {
+              "value": "Ngjhgi Gczmmjgl",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "Xdhlra Fkhlotqv",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "Ijxkhk Stsizxwn",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "Wiormb Kfoojnyn",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "Dxplks Ryoywgoh",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 995,
+              "pct": 0.995
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "department",
+        "dtype": "str",
+        "null_count": 68,
+        "total_rows": 1000,
+        "null_rate": 0.068,
+        "unique_count": 9,
+        "unique_ratio": 0.009,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "Sales",
+          "Finance",
+          "Engineering",
+          "HR",
+          "Marketing",
+          "none",
+          "0",
+          "unknown",
+          "-"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Moderate null rate (6.80%) — consider imputation strategy.",
+          "unique_ratio = 0.0090 (low) — only 9 distinct values --> likely a categorical column (e.g. gender, status, type).",
+          "Disguised nulls detected: 'unknown' (17 times), '-' (17 times), 'none' (29 times), '0' (23 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 932,
+          "values_pct": 0.932,
+          "missing_count": 68,
+          "missing_pct": 0.068,
+          "distinct_count": 9,
+          "distinct_pct": 0.009,
+          "frequencies": [
+            {
+              "value": "Sales",
+              "count": 186,
+              "pct": 0.186
+            },
+            {
+              "value": "Finance",
+              "count": 179,
+              "pct": 0.179
+            },
+            {
+              "value": "Engineering",
+              "count": 162,
+              "pct": 0.162
+            },
+            {
+              "value": "HR",
+              "count": 160,
+              "pct": 0.16
+            },
+            {
+              "value": "Marketing",
+              "count": 159,
+              "pct": 0.159
+            },
+            {
+              "value": "(Other)",
+              "count": 86,
+              "pct": 0.086
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "job_title",
+        "dtype": "str",
+        "null_count": 64,
+        "total_rows": 1000,
+        "null_rate": 0.064,
+        "unique_count": 7,
+        "unique_ratio": 0.007,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "Lead",
+          "Senior",
+          "Director",
+          "Junior",
+          "Manager",
+          "unknown",
+          "-"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Moderate null rate (6.40%) — consider imputation strategy.",
+          "unique_ratio = 0.0070 (low) — only 7 distinct values --> likely a categorical column (e.g. gender, status, type).",
+          "Disguised nulls detected: 'unknown' (75 times), '-' (64 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 936,
+          "values_pct": 0.936,
+          "missing_count": 64,
+          "missing_pct": 0.064,
+          "distinct_count": 7,
+          "distinct_pct": 0.007,
+          "frequencies": [
+            {
+              "value": "Lead",
+              "count": 174,
+              "pct": 0.174
+            },
+            {
+              "value": "Senior",
+              "count": 163,
+              "pct": 0.163
+            },
+            {
+              "value": "Director",
+              "count": 159,
+              "pct": 0.159
+            },
+            {
+              "value": "Junior",
+              "count": 155,
+              "pct": 0.155
+            },
+            {
+              "value": "Manager",
+              "count": 146,
+              "pct": 0.146
+            },
+            {
+              "value": "(Other)",
+              "count": 139,
+              "pct": 0.139
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "salary",
+        "dtype": "str",
+        "null_count": 111,
+        "total_rows": 1000,
+        "null_rate": 0.111,
+        "unique_count": 799,
+        "unique_ratio": 0.799,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "0",
+          "unknown",
+          "129059.0",
+          "125120.0",
+          "20474.0",
+          "21353.0",
+          "31657.0",
+          "97343.0",
+          "31598.0",
+          "42102.0",
+          "68494.0",
+          "60270.0",
+          "100712.0",
+          "68328.0",
+          "33539.0",
+          "119469.0",
+          "64953.0",
+          "50247.0",
+          "75786.0",
+          "124150.0"
+        ],
+        "detected_patterns": [
+          "float_str"
+        ],
+        "interpretation": [
+          "Moderate null rate (11.10%) — consider imputation strategy.",
+          "unique_ratio = 0.7990 — regular column (not a key, not purely categorical).",
+          "String pattern detected: ['float_str'] — dtype may be refinable.",
+          "Disguised nulls detected: 'unknown' (42 times), '0' (46 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 889,
+          "values_pct": 0.889,
+          "missing_count": 111,
+          "missing_pct": 0.111,
+          "distinct_count": 799,
+          "distinct_pct": 0.799,
+          "frequencies": [
+            {
+              "value": "0",
+              "count": 46,
+              "pct": 0.046
+            },
+            {
+              "value": "unknown",
+              "count": 42,
+              "pct": 0.042
+            },
+            {
+              "value": "129059.0",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "125120.0",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "20474.0",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "(Other)",
+              "count": 795,
+              "pct": 0.795
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "hire_date",
+        "dtype": "str",
+        "null_count": 22,
+        "total_rows": 1000,
+        "null_rate": 0.022,
+        "unique_count": 776,
+        "unique_ratio": 0.776,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "-",
+          "unknown",
+          "2021-09-20",
+          "2022-08-04",
+          "2020-09-28",
+          "2021-03-19",
+          "2019-11-05",
+          "2018-01-02",
+          "2019-05-22",
+          "2020-02-03",
+          "2019-07-12",
+          "2022-12-15",
+          "2020-02-18",
+          "2019-04-09",
+          "2019-05-11",
+          "2023-03-08",
+          "2023-12-26",
+          "2020-05-10",
+          "2024-11-18",
+          "2022-03-09"
+        ],
+        "detected_patterns": [
+          "date_iso"
+        ],
+        "interpretation": [
+          "Very low null rate (2.20%) — acceptable for most pipelines.",
+          "unique_ratio = 0.7760 — regular column (not a key, not purely categorical).",
+          "String pattern detected: ['date_iso'] — dtype may be refinable.",
+          "Disguised nulls detected: 'unknown' (18 times), '-' (30 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 978,
+          "values_pct": 0.978,
+          "missing_count": 22,
+          "missing_pct": 0.022,
+          "distinct_count": 776,
+          "distinct_pct": 0.776,
+          "frequencies": [
+            {
+              "value": "-",
+              "count": 30,
+              "pct": 0.03
+            },
+            {
+              "value": "unknown",
+              "count": 18,
+              "pct": 0.018
+            },
+            {
+              "value": "2021-09-20",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "2022-08-04",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "2020-09-28",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "(Other)",
+              "count": 920,
+              "pct": 0.92
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "phone",
+        "dtype": "str",
+        "null_count": 113,
+        "total_rows": 1000,
+        "null_rate": 0.113,
+        "unique_count": 763,
+        "unique_ratio": 0.763,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "-",
+          "none",
+          "0640428116",
+          "0342486201",
+          "0537813730",
+          "0353517947",
+          "0546131281",
+          "0319120685",
+          "0770260373",
+          "0978913746",
+          "0633713320",
+          "0863312468",
+          "0496861072",
+          "0396959547",
+          "0382421957",
+          "0967761283",
+          "0882820025",
+          "0373724172",
+          "0329516778",
+          "0850283045"
+        ],
+        "detected_patterns": [
+          "phone"
+        ],
+        "interpretation": [
+          "Moderate null rate (11.30%) — consider imputation strategy.",
+          "unique_ratio = 0.7630 — regular column (not a key, not purely categorical).",
+          "String pattern detected: ['phone'] — dtype may be refinable.",
+          "Disguised nulls detected: '-' (68 times), 'none' (58 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 887,
+          "values_pct": 0.887,
+          "missing_count": 113,
+          "missing_pct": 0.113,
+          "distinct_count": 763,
+          "distinct_pct": 0.763,
+          "frequencies": [
+            {
+              "value": "-",
+              "count": 68,
+              "pct": 0.068
+            },
+            {
+              "value": "none",
+              "count": 58,
+              "pct": 0.058
+            },
+            {
+              "value": "0640428116",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "0342486201",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "0537813730",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 758,
+              "pct": 0.758
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "email",
+        "dtype": "str",
+        "null_count": 92,
+        "total_rows": 1000,
+        "null_rate": 0.092,
+        "unique_count": 824,
+        "unique_ratio": 0.824,
+        "unique_ratio_category": "near_unique",
+        "sample_values": [
+          "unknown",
+          "xdhlra@hotmail.com",
+          "wiormb@hotmail.com",
+          "dxplks@outlook.com",
+          "tzchhn@outlook.com",
+          "xfunmx@yahoo.com",
+          "xrjcda@outlook.com",
+          "ixdstg@outlook.com",
+          "djfumt@gmail.com",
+          "mlfnvv@yahoo.com",
+          "kgpcca@hotmail.com",
+          "xibsnt@hotmail.com",
+          "pwnmss@gmail.com",
+          "zwyzrv@yahoo.com",
+          "dpwvoz@yahoo.com",
+          "bvbqnm@outlook.com",
+          "shcpij@gmail.com",
+          "tzmnns@gmail.com",
+          "ukrvvj@hotmail.com",
+          "nqxfcs@hotmail.com"
+        ],
+        "detected_patterns": [
+          "email"
+        ],
+        "interpretation": [
+          "Moderate null rate (9.20%) — consider imputation strategy.",
+          "unique_ratio = 0.8240 (< 1.0) — 176 duplicate value(s) detected — investigate for unintended duplicates.",
+          "String pattern detected: ['email'] — dtype may be refinable.",
+          "Disguised nulls detected: 'unknown' (85 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 908,
+          "values_pct": 0.908,
+          "missing_count": 92,
+          "missing_pct": 0.092,
+          "distinct_count": 824,
+          "distinct_pct": 0.824,
+          "frequencies": [
+            {
+              "value": "unknown",
+              "count": 85,
+              "pct": 0.085
+            },
+            {
+              "value": "xdhlra@hotmail.com",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "wiormb@hotmail.com",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "dxplks@outlook.com",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "tzchhn@outlook.com",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 819,
+              "pct": 0.819
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "manager_id",
+        "dtype": "str",
+        "null_count": 306,
+        "total_rows": 1000,
+        "null_rate": 0.306,
+        "unique_count": 99,
+        "unique_ratio": 0.099,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "EMP-00083",
+          "EMP-00024",
+          "EMP-00031",
+          "EMP-00079",
+          "EMP-00016",
+          "EMP-00001",
+          "EMP-00097",
+          "EMP-00009",
+          "EMP-00048",
+          "EMP-00088",
+          "EMP-00033",
+          "EMP-00040",
+          "EMP-00034",
+          "EMP-00007",
+          "EMP-00017",
+          "EMP-00044",
+          "EMP-00078",
+          "EMP-00041",
+          "EMP-00086",
+          "EMP-00070"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "High null rate (30.60%) — column may need significant imputation or removal.",
+          "unique_ratio = 0.0990 (low) — only 99 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 694,
+          "values_pct": 0.694,
+          "missing_count": 306,
+          "missing_pct": 0.306,
+          "distinct_count": 99,
+          "distinct_pct": 0.099,
+          "frequencies": [
+            {
+              "value": "EMP-00083",
+              "count": 17,
+              "pct": 0.017
+            },
+            {
+              "value": "EMP-00024",
+              "count": 12,
+              "pct": 0.012
+            },
+            {
+              "value": "EMP-00031",
+              "count": 12,
+              "pct": 0.012
+            },
+            {
+              "value": "EMP-00079",
+              "count": 12,
+              "pct": 0.012
+            },
+            {
+              "value": "EMP-00016",
+              "count": 12,
+              "pct": 0.012
+            },
+            {
+              "value": "(Other)",
+              "count": 629,
+              "pct": 0.629
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "performance_score",
+        "dtype": "str",
+        "null_count": 126,
+        "total_rows": 1000,
+        "null_rate": 0.126,
+        "unique_count": 7,
+        "unique_ratio": 0.007,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "2.0",
+          "3.0",
+          "5.0",
+          "4.0",
+          "1.0",
+          "0",
+          "unknown"
+        ],
+        "detected_patterns": [
+          "float_str"
+        ],
+        "interpretation": [
+          "Moderate null rate (12.60%) — consider imputation strategy.",
+          "unique_ratio = 0.0070 (low) — only 7 distinct values --> likely a categorical column (e.g. gender, status, type).",
+          "String pattern detected: ['float_str'] — dtype may be refinable.",
+          "Disguised nulls detected: 'unknown' (37 times), '0' (43 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 874,
+          "values_pct": 0.874,
+          "missing_count": 126,
+          "missing_pct": 0.126,
+          "distinct_count": 7,
+          "distinct_pct": 0.007,
+          "frequencies": [
+            {
+              "value": "2.0",
+              "count": 166,
+              "pct": 0.166
+            },
+            {
+              "value": "3.0",
+              "count": 164,
+              "pct": 0.164
+            },
+            {
+              "value": "5.0",
+              "count": 160,
+              "pct": 0.16
+            },
+            {
+              "value": "4.0",
+              "count": 152,
+              "pct": 0.152
+            },
+            {
+              "value": "1.0",
+              "count": 152,
+              "pct": 0.152
+            },
+            {
+              "value": "(Other)",
+              "count": 80,
+              "pct": 0.08
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "profiler_summary": {
+    "total_rows": 1000,
+    "total_columns": 10,
+    "duplicate_rows": 0,
+    "pk_candidates": [
+      "emp_id",
+      "full_name"
+    ],
+    "near_unique_columns": [
+      "email"
+    ],
+    "categorical_columns": [
+      "department",
+      "job_title",
+      "manager_id",
+      "performance_score"
+    ],
+    "high_null_columns": [],
+    "column_null_rates": {
+      "emp_id": 0.0,
+      "full_name": 0.0,
+      "department": 0.068,
+      "job_title": 0.064,
+      "salary": 0.111,
+      "hire_date": 0.022,
+      "phone": 0.113,
+      "email": 0.092,
+      "manager_id": 0.306,
+      "performance_score": 0.126
+    },
+    "column_dtypes": {
+      "emp_id": "str",
+      "full_name": "str",
+      "department": "str",
+      "job_title": "str",
+      "salary": "str",
+      "hire_date": "str",
+      "phone": "str",
+      "email": "str",
+      "manager_id": "str",
+      "performance_score": "str"
+    },
+    "column_unique_ratios": {
+      "emp_id": 1.0,
+      "full_name": 1.0,
+      "department": 0.009,
+      "job_title": 0.007,
+      "salary": 0.799,
+      "hire_date": 0.776,
+      "phone": 0.763,
+      "email": 0.824,
+      "manager_id": 0.099,
+      "performance_score": 0.007
+    }
+  },
+  "validator_result": null,
+  "error": null,
+  "assertions": [
+    {
+      "check": "null_detected",
+      "passed": true,
+      "detail": "high_null_cols=[]"
+    }
+  ]
+}

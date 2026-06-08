@@ -1,0 +1,809 @@
+{
+  "dataset_id": "DS05",
+  "file": "C:\\Users\\socia\\OneDrive\\Documents\\GitHub\\Agentic-Data-Cleaner\\tests\\dirty_datasets\\DS05_type_mismatch.csv",
+  "domain": "Giao dịch / Finance",
+  "timestamp": "2026-06-07T12:44:47.300067",
+  "status": "PASS",
+  "profiler_result": {
+    "source": "\\tmp\\ade\\uploads\\78d79697a23d467093ee7eaa68fb5d62.parquet",
+    "total_rows": 1000,
+    "total_columns": 10,
+    "pk_candidates": [
+      "txn_id",
+      "account_from",
+      "account_to"
+    ],
+    "near_unique_columns": [
+      "amount",
+      "txn_date",
+      "fee"
+    ],
+    "categorical_columns": [
+      "currency",
+      "txn_type",
+      "is_flagged"
+    ],
+    "high_null_columns": [],
+    "duplicate_rows": 0,
+    "columns": [
+      {
+        "column_name": "txn_id",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 1000,
+        "unique_ratio": 1.0,
+        "unique_ratio_category": "primary_key",
+        "sample_values": [
+          "TXN0000001",
+          "TXN0000002",
+          "TXN0000003",
+          "TXN0000004",
+          "TXN0000005",
+          "TXN0000006",
+          "TXN0000007",
+          "TXN0000008",
+          "TXN0000009",
+          "TXN0000010",
+          "TXN0000522",
+          "TXN0000738",
+          "TXN0000741",
+          "TXN0000661",
+          "TXN0000412",
+          "TXN0000679",
+          "TXN0000627",
+          "TXN0000514",
+          "TXN0000860",
+          "TXN0000137"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 1.0 --> every row has a distinct value — strong Primary Key / ID candidate."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 1000,
+          "distinct_pct": 1.0,
+          "frequencies": [
+            {
+              "value": "TXN0000001",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "TXN0000002",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "TXN0000003",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "TXN0000004",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "TXN0000005",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 995,
+              "pct": 0.995
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "account_from",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 1000,
+        "unique_ratio": 1.0,
+        "unique_ratio_category": "primary_key",
+        "sample_values": [
+          "ACC-917117",
+          "ACC-724658",
+          "ACC-675653",
+          "ACC-546643",
+          "ACC-976772",
+          "ACC-650520",
+          "ACC-824696",
+          "ACC-676776",
+          "ACC-962670",
+          "ACC-488054",
+          "ACC-797735",
+          "ACC-934466",
+          "ACC-352093",
+          "ACC-291430",
+          "ACC-355064",
+          "ACC-870515",
+          "ACC-935181",
+          "ACC-925768",
+          "ACC-295606",
+          "ACC-272270"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 1.0 --> every row has a distinct value — strong Primary Key / ID candidate."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 1000,
+          "distinct_pct": 1.0,
+          "frequencies": [
+            {
+              "value": "ACC-917117",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "ACC-724658",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "ACC-675653",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "ACC-546643",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "ACC-976772",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 995,
+              "pct": 0.995
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "account_to",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 1000,
+        "unique_ratio": 1.0,
+        "unique_ratio_category": "primary_key",
+        "sample_values": [
+          "ACC-619472",
+          "ACC-953369",
+          "ACC-449127",
+          "ACC-220072",
+          "ACC-690603",
+          "ACC-648884",
+          "ACC-923515",
+          "ACC-301871",
+          "ACC-242167",
+          "ACC-711221",
+          "ACC-612221",
+          "ACC-824380",
+          "ACC-473235",
+          "ACC-703709",
+          "ACC-307465",
+          "ACC-905219",
+          "ACC-858185",
+          "ACC-413908",
+          "ACC-140476",
+          "ACC-121045"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 1.0 --> every row has a distinct value — strong Primary Key / ID candidate."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 1000,
+          "distinct_pct": 1.0,
+          "frequencies": [
+            {
+              "value": "ACC-619472",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "ACC-953369",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "ACC-449127",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "ACC-220072",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "ACC-690603",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 995,
+              "pct": 0.995
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "amount",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 999,
+        "unique_ratio": 0.999,
+        "unique_ratio_category": "near_unique",
+        "sample_values": [
+          "55281",
+          "$85299.11",
+          "46188",
+          "1,692.79 VND",
+          "13423",
+          "94,549.50 VND",
+          "53746",
+          "76,877.68 VND",
+          "VND 88289.44",
+          "32,098.51 VND",
+          "1653",
+          "13864",
+          "94017",
+          "VND 29326.32",
+          "$4401.65",
+          "83,884.04 VND",
+          "94,999.07 VND",
+          "34044",
+          "16155",
+          "86669"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.9990 (< 1.0) — 1 duplicate value(s) detected — investigate for unintended duplicates."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 999,
+          "distinct_pct": 0.999,
+          "frequencies": [
+            {
+              "value": "55281",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "$85299.11",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "46188",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "1,692.79 VND",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "13423",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 994,
+              "pct": 0.994
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "currency",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 4,
+        "unique_ratio": 0.004,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "USD",
+          "EUR",
+          "VND",
+          "GBP"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0040 (low) — only 4 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 4,
+          "distinct_pct": 0.004,
+          "frequencies": [
+            {
+              "value": "USD",
+              "count": 261,
+              "pct": 0.261
+            },
+            {
+              "value": "EUR",
+              "count": 260,
+              "pct": 0.26
+            },
+            {
+              "value": "VND",
+              "count": 245,
+              "pct": 0.245
+            },
+            {
+              "value": "GBP",
+              "count": 234,
+              "pct": 0.234
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "txn_date",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 952,
+        "unique_ratio": 0.952,
+        "unique_ratio_category": "near_unique",
+        "sample_values": [
+          "2020/08/16",
+          "2024/10/04",
+          "2024/02/24",
+          "12-23-2021",
+          "06-10-2019",
+          "07/10/2019",
+          "08-15-2022",
+          "08-22-2024",
+          "02-03-2019",
+          "8/2/21",
+          "3/2/18",
+          "2022/01/02",
+          "12-20-2022",
+          "2019/06/23",
+          "2020/01/16",
+          "12/09/2018",
+          "07-20-2024",
+          "07/11/2024",
+          "4/4/22",
+          "23/2/18"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.9520 (< 1.0) — 48 duplicate value(s) detected — investigate for unintended duplicates."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 952,
+          "distinct_pct": 0.952,
+          "frequencies": [
+            {
+              "value": "2020/08/16",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "2024/10/04",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "2024/02/24",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "12-23-2021",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "06-10-2019",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "(Other)",
+              "count": 989,
+              "pct": 0.989
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "txn_type",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 4,
+        "unique_ratio": 0.004,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "credit",
+          "transfer",
+          "refund",
+          "debit"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0040 (low) — only 4 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 4,
+          "distinct_pct": 0.004,
+          "frequencies": [
+            {
+              "value": "credit",
+              "count": 261,
+              "pct": 0.261
+            },
+            {
+              "value": "transfer",
+              "count": 251,
+              "pct": 0.251
+            },
+            {
+              "value": "refund",
+              "count": 249,
+              "pct": 0.249
+            },
+            {
+              "value": "debit",
+              "count": 239,
+              "pct": 0.239
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "is_flagged",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 6,
+        "unique_ratio": 0.006,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "true",
+          "0",
+          "1",
+          "false",
+          "no",
+          "yes"
+        ],
+        "detected_patterns": [
+          "boolean_str"
+        ],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0060 (low) — only 6 distinct values --> likely a categorical column (e.g. gender, status, type).",
+          "String pattern detected: ['boolean_str'] — dtype may be refinable.",
+          "Disguised nulls detected: '0' (178 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 6,
+          "distinct_pct": 0.006,
+          "frequencies": [
+            {
+              "value": "true",
+              "count": 189,
+              "pct": 0.189
+            },
+            {
+              "value": "0",
+              "count": 178,
+              "pct": 0.178
+            },
+            {
+              "value": "1",
+              "count": 172,
+              "pct": 0.172
+            },
+            {
+              "value": "false",
+              "count": 163,
+              "pct": 0.163
+            },
+            {
+              "value": "no",
+              "count": 158,
+              "pct": 0.158
+            },
+            {
+              "value": "(Other)",
+              "count": 140,
+              "pct": 0.14
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "fee",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 942,
+        "unique_ratio": 0.942,
+        "unique_ratio_category": "near_unique",
+        "sample_values": [
+          "31.29 VND",
+          "7.54",
+          "13.32 VND",
+          "39.56",
+          "9.84 VND",
+          "49.19",
+          "46.66 VND",
+          "13.69 VND",
+          "7.85",
+          "11.57 VND",
+          "0.08 VND",
+          "10.03",
+          "3.17 VND",
+          "47.54 VND",
+          "24.68 VND",
+          "45.06 VND",
+          "41.07 VND",
+          "3.04 VND",
+          "13.72 VND",
+          "8.59"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.9420 (< 1.0) — 58 duplicate value(s) detected — investigate for unintended duplicates."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 942,
+          "distinct_pct": 0.942,
+          "frequencies": [
+            {
+              "value": "31.29 VND",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "7.54",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "13.32 VND",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "39.56",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "9.84 VND",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "(Other)",
+              "count": 987,
+              "pct": 0.987
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "processed_by",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 594,
+        "unique_ratio": 0.594,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "USR-448",
+          "USR-251",
+          "USR-394",
+          "USR-453",
+          "USR-878",
+          "USR-916",
+          "USR-233",
+          "USR-250",
+          "USR-182",
+          "USR-348",
+          "USR-706",
+          "USR-694",
+          "USR-583",
+          "USR-170",
+          "USR-515",
+          "USR-295",
+          "USR-609",
+          "USR-896",
+          "USR-223",
+          "USR-618"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.5940 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 594,
+          "distinct_pct": 0.594,
+          "frequencies": [
+            {
+              "value": "USR-448",
+              "count": 7,
+              "pct": 0.007
+            },
+            {
+              "value": "USR-251",
+              "count": 6,
+              "pct": 0.006
+            },
+            {
+              "value": "USR-394",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "USR-453",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "USR-878",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "(Other)",
+              "count": 972,
+              "pct": 0.972
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "profiler_summary": {
+    "total_rows": 1000,
+    "total_columns": 10,
+    "duplicate_rows": 0,
+    "pk_candidates": [
+      "txn_id",
+      "account_from",
+      "account_to"
+    ],
+    "near_unique_columns": [
+      "amount",
+      "txn_date",
+      "fee"
+    ],
+    "categorical_columns": [
+      "currency",
+      "txn_type",
+      "is_flagged"
+    ],
+    "high_null_columns": [],
+    "column_null_rates": {
+      "txn_id": 0.0,
+      "account_from": 0.0,
+      "account_to": 0.0,
+      "amount": 0.0,
+      "currency": 0.0,
+      "txn_date": 0.0,
+      "txn_type": 0.0,
+      "is_flagged": 0.0,
+      "fee": 0.0,
+      "processed_by": 0.0
+    },
+    "column_dtypes": {
+      "txn_id": "str",
+      "account_from": "str",
+      "account_to": "str",
+      "amount": "str",
+      "currency": "str",
+      "txn_date": "str",
+      "txn_type": "str",
+      "is_flagged": "str",
+      "fee": "str",
+      "processed_by": "str"
+    },
+    "column_unique_ratios": {
+      "txn_id": 1.0,
+      "account_from": 1.0,
+      "account_to": 1.0,
+      "amount": 0.999,
+      "currency": 0.004,
+      "txn_date": 0.952,
+      "txn_type": 0.004,
+      "is_flagged": 0.006,
+      "fee": 0.942,
+      "processed_by": 0.594
+    }
+  },
+  "validator_result": null,
+  "error": null,
+  "assertions": []
+}

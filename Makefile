@@ -8,8 +8,8 @@
 PYTHON      ?= python3.13
 MIN_PYTHON  := 3.13
 VENV        := .venv
-PIP         := $(VENV)/bin/pip
-PY          := $(VENV)/bin/python
+PIP         := $(VENV)/Scripts/pip
+PY          := $(VENV)/Scripts/python
 DOCKER_COMPOSE ?= docker compose
 
 .PHONY: help setup venv install envfile up down wait-db run uvicorn test lint fmt docker-full clean-venv

@@ -1,0 +1,56 @@
+======================================================================
+  TEST RUN SUMMARY — Mode: profiler
+  Timestamp: 2026-06-07T12:44:47.976847
+======================================================================
+
+  TOTAL:   10
+  PASS:    10  ✓
+  FAIL:    0  ✗
+  ERROR:   0  !
+  SKIP:    0  -
+  PASS RATE: 100.0%
+
+----------------------------------------------------------------------
+  Per-Dataset Results:
+
+  [✓] DS01 — Bệnh nhân / Hospital
+      Status: PASS
+        [✓] duplicate_detected: duplicate_rows=500, near_unique=[]
+
+  [✓] DS02 — Đơn hàng / E-commerce
+      Status: PASS
+        [✓] duplicate_detected: duplicate_rows=0, near_unique=['customer_id', 'order_date', 'shipping_addr']
+
+  [✓] DS03 — Khảo sát / Survey
+      Status: PASS
+        [✓] null_detected: high_null_cols=['q1_satisfaction', 'q2_recommend', 'q3_comment', 'q4_income', 'q5_education', 'q6_occupation']
+
+  [✓] DS04 — Nhân sự / HR
+      Status: PASS
+        [✓] null_detected: high_null_cols=[]
+
+  [✓] DS05 — Giao dịch / Finance
+      Status: PASS
+
+  [✓] DS06 — Điểm thi / Education
+      Status: PASS
+        [✓] null_detected: high_null_cols=[]
+
+  [✓] DS07 — Sản phẩm / Inventory
+      Status: PASS
+        [✓] duplicate_detected: duplicate_rows=0, near_unique=['price']
+        [✓] null_detected: high_null_cols=[]
+
+  [✓] DS08 — IoT Sensor
+      Status: PASS
+        [✓] null_detected: high_null_cols=['device_name', 'location', 'pressure_hpa', 'co2_ppm', 'firmware_version']
+
+  [✓] DS09 — Hồ sơ Bệnh viện (Mega Dirty)
+      Status: PASS
+        [✓] duplicate_detected: duplicate_rows=200, near_unique=[]
+        [✓] null_detected: high_null_cols=[]
+
+  [✓] DS10 — Logistics
+      Status: PASS
+        [✓] null_detected: high_null_cols=[]
+

@@ -1,0 +1,789 @@
+{
+  "dataset_id": "DS01",
+  "file": "C:\\Users\\socia\\OneDrive\\Documents\\GitHub\\Agentic-Data-Cleaner\\tests\\dirty_datasets\\DS01_full_row_duplicate.csv",
+  "domain": "Bệnh nhân / Hospital",
+  "timestamp": "2026-06-07T12:44:31.678036",
+  "status": "PASS",
+  "profiler_result": {
+    "source": "\\tmp\\ade\\uploads\\80882ff7c175458b9def6c1788ef38e6.parquet",
+    "total_rows": 1000,
+    "total_columns": 10,
+    "pk_candidates": [],
+    "near_unique_columns": [],
+    "categorical_columns": [
+      "age",
+      "gender",
+      "blood_type",
+      "diagnosis",
+      "ward"
+    ],
+    "high_null_columns": [],
+    "duplicate_rows": 500,
+    "columns": [
+      {
+        "column_name": "patient_id",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 500,
+        "unique_ratio": 0.5,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "P00001",
+          "P00002",
+          "P00003",
+          "P00004",
+          "P00005",
+          "P00006",
+          "P00007",
+          "P00008",
+          "P00009",
+          "P00010",
+          "P00022",
+          "P00238",
+          "P00241",
+          "P00161",
+          "P00412",
+          "P00179",
+          "P00127",
+          "P00014",
+          "P00360",
+          "P00137"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.5000 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 500,
+          "distinct_pct": 0.5,
+          "frequencies": [
+            {
+              "value": "P00001",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "P00002",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "P00003",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "P00004",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "P00005",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "(Other)",
+              "count": 990,
+              "pct": 0.99
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "full_name",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 500,
+        "unique_ratio": 0.5,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "HbolMJUevb",
+          "lAbkHClEQa",
+          "PKriXrefSF",
+          "PLBYtCRGSE",
+          "KclpemfoHs",
+          "tknWHFiLit",
+          "ZHCJROlbqn",
+          "kXTqIuVxnm",
+          "DnEUulZAec",
+          "fGPvdtZBYS",
+          "nOxvXZCLip",
+          "mvjHwbFkEu",
+          "QKpFeggpjK",
+          "WiILFRDQbc",
+          "deoRVsYoFk",
+          "YQXPpoLsxn",
+          "hdfUrLAimw",
+          "pdTXezdNNg",
+          "xgvKMpKSLW",
+          "fRSoNoVhwX"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.5000 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 500,
+          "distinct_pct": 0.5,
+          "frequencies": [
+            {
+              "value": "HbolMJUevb",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "lAbkHClEQa",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "PKriXrefSF",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "PLBYtCRGSE",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "KclpemfoHs",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "(Other)",
+              "count": 990,
+              "pct": 0.99
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "age",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 67,
+        "unique_ratio": 0.067,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "47",
+          "51",
+          "70",
+          "62",
+          "80",
+          "49",
+          "73",
+          "55",
+          "82",
+          "38",
+          "42",
+          "46",
+          "27",
+          "84",
+          "33",
+          "78",
+          "23",
+          "68",
+          "58"
+        ],
+        "detected_patterns": [
+          "integer_str"
+        ],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0670 (low) — only 67 distinct values --> likely a categorical column (e.g. gender, status, type).",
+          "String pattern detected: ['integer_str'] — dtype may be refinable."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 67,
+          "distinct_pct": 0.067,
+          "frequencies": [
+            {
+              "value": "47",
+              "count": 34,
+              "pct": 0.034
+            },
+            {
+              "value": "51",
+              "count": 28,
+              "pct": 0.028
+            },
+            {
+              "value": "70",
+              "count": 26,
+              "pct": 0.026
+            },
+            {
+              "value": "62",
+              "count": 26,
+              "pct": 0.026
+            },
+            {
+              "value": "80",
+              "count": 24,
+              "pct": 0.024
+            },
+            {
+              "value": "(Other)",
+              "count": 862,
+              "pct": 0.862
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "gender",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 3,
+        "unique_ratio": 0.003,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "Female",
+          "Other",
+          "Male"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0030 (low) — only 3 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 3,
+          "distinct_pct": 0.003,
+          "frequencies": [
+            {
+              "value": "Female",
+              "count": 358,
+              "pct": 0.358
+            },
+            {
+              "value": "Other",
+              "count": 338,
+              "pct": 0.338
+            },
+            {
+              "value": "Male",
+              "count": 304,
+              "pct": 0.304
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "blood_type",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 8,
+        "unique_ratio": 0.008,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "A+",
+          "O-",
+          "AB-",
+          "AB+",
+          "B-",
+          "B+",
+          "A-",
+          "O+"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0080 (low) — only 8 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 8,
+          "distinct_pct": 0.008,
+          "frequencies": [
+            {
+              "value": "A+",
+              "count": 136,
+              "pct": 0.136
+            },
+            {
+              "value": "O-",
+              "count": 132,
+              "pct": 0.132
+            },
+            {
+              "value": "AB-",
+              "count": 128,
+              "pct": 0.128
+            },
+            {
+              "value": "AB+",
+              "count": 126,
+              "pct": 0.126
+            },
+            {
+              "value": "B-",
+              "count": 126,
+              "pct": 0.126
+            },
+            {
+              "value": "(Other)",
+              "count": 352,
+              "pct": 0.352
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "diagnosis",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 5,
+        "unique_ratio": 0.005,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "COVID-19",
+          "Diabetes",
+          "Hypertension",
+          "Asthma",
+          "Flu"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0050 (low) — only 5 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 5,
+          "distinct_pct": 0.005,
+          "frequencies": [
+            {
+              "value": "COVID-19",
+              "count": 222,
+              "pct": 0.222
+            },
+            {
+              "value": "Diabetes",
+              "count": 198,
+              "pct": 0.198
+            },
+            {
+              "value": "Hypertension",
+              "count": 196,
+              "pct": 0.196
+            },
+            {
+              "value": "Asthma",
+              "count": 194,
+              "pct": 0.194
+            },
+            {
+              "value": "Flu",
+              "count": 190,
+              "pct": 0.19
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "admission_date",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 454,
+        "unique_ratio": 0.454,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "2018-02-15",
+          "2019-03-24",
+          "2020-10-09",
+          "2024-07-21",
+          "2021-01-14",
+          "2024-04-23",
+          "2021-04-15",
+          "2024-11-24",
+          "2021-06-05",
+          "2023-08-03",
+          "2019-11-07",
+          "2023-06-25",
+          "2022-07-27",
+          "2022-09-16",
+          "2024-11-23",
+          "2018-09-26",
+          "2021-08-03",
+          "2018-09-02",
+          "2023-02-17",
+          "2020-02-22"
+        ],
+        "detected_patterns": [
+          "date_iso"
+        ],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.4540 — regular column (not a key, not purely categorical).",
+          "String pattern detected: ['date_iso'] — dtype may be refinable."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 454,
+          "distinct_pct": 0.454,
+          "frequencies": [
+            {
+              "value": "2018-02-15",
+              "count": 6,
+              "pct": 0.006
+            },
+            {
+              "value": "2019-03-24",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "2020-10-09",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "2024-07-21",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "2021-01-14",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "(Other)",
+              "count": 978,
+              "pct": 0.978
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "discharge_date",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 452,
+        "unique_ratio": 0.452,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "2022-12-24",
+          "2020-03-19",
+          "2021-05-13",
+          "2021-08-13",
+          "2019-12-03",
+          "2022-12-25",
+          "2021-10-04",
+          "2023-05-12",
+          "2018-04-19",
+          "2024-11-22",
+          "2023-08-15",
+          "2018-12-15",
+          "2022-09-04",
+          "2022-11-06",
+          "2018-07-16",
+          "2023-12-10",
+          "2024-08-06",
+          "2021-04-25",
+          "2023-03-13",
+          "2021-01-15"
+        ],
+        "detected_patterns": [
+          "date_iso"
+        ],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.4520 — regular column (not a key, not purely categorical).",
+          "String pattern detected: ['date_iso'] — dtype may be refinable."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 452,
+          "distinct_pct": 0.452,
+          "frequencies": [
+            {
+              "value": "2022-12-24",
+              "count": 6,
+              "pct": 0.006
+            },
+            {
+              "value": "2020-03-19",
+              "count": 6,
+              "pct": 0.006
+            },
+            {
+              "value": "2021-05-13",
+              "count": 6,
+              "pct": 0.006
+            },
+            {
+              "value": "2021-08-13",
+              "count": 6,
+              "pct": 0.006
+            },
+            {
+              "value": "2019-12-03",
+              "count": 6,
+              "pct": 0.006
+            },
+            {
+              "value": "(Other)",
+              "count": 970,
+              "pct": 0.97
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "ward",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 5,
+        "unique_ratio": 0.005,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "Surgery",
+          "ICU",
+          "Pediatrics",
+          "General",
+          "Emergency"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0050 (low) — only 5 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 5,
+          "distinct_pct": 0.005,
+          "frequencies": [
+            {
+              "value": "Surgery",
+              "count": 232,
+              "pct": 0.232
+            },
+            {
+              "value": "ICU",
+              "count": 218,
+              "pct": 0.218
+            },
+            {
+              "value": "Pediatrics",
+              "count": 190,
+              "pct": 0.19
+            },
+            {
+              "value": "General",
+              "count": 186,
+              "pct": 0.186
+            },
+            {
+              "value": "Emergency",
+              "count": 174,
+              "pct": 0.174
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "doctor_id",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 378,
+        "unique_ratio": 0.378,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "DR164",
+          "DR985",
+          "DR759",
+          "DR863",
+          "DR226",
+          "DR252",
+          "DR133",
+          "DR467",
+          "DR376",
+          "DR943",
+          "DR398",
+          "DR575",
+          "DR302",
+          "DR601",
+          "DR972",
+          "DR584",
+          "DR793",
+          "DR494",
+          "DR585",
+          "DR499"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.3780 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 378,
+          "distinct_pct": 0.378,
+          "frequencies": [
+            {
+              "value": "DR164",
+              "count": 8,
+              "pct": 0.008
+            },
+            {
+              "value": "DR985",
+              "count": 8,
+              "pct": 0.008
+            },
+            {
+              "value": "DR759",
+              "count": 8,
+              "pct": 0.008
+            },
+            {
+              "value": "DR863",
+              "count": 8,
+              "pct": 0.008
+            },
+            {
+              "value": "DR226",
+              "count": 6,
+              "pct": 0.006
+            },
+            {
+              "value": "(Other)",
+              "count": 962,
+              "pct": 0.962
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "profiler_summary": {
+    "total_rows": 1000,
+    "total_columns": 10,
+    "duplicate_rows": 500,
+    "pk_candidates": [],
+    "near_unique_columns": [],
+    "categorical_columns": [
+      "age",
+      "gender",
+      "blood_type",
+      "diagnosis",
+      "ward"
+    ],
+    "high_null_columns": [],
+    "column_null_rates": {
+      "patient_id": 0.0,
+      "full_name": 0.0,
+      "age": 0.0,
+      "gender": 0.0,
+      "blood_type": 0.0,
+      "diagnosis": 0.0,
+      "admission_date": 0.0,
+      "discharge_date": 0.0,
+      "ward": 0.0,
+      "doctor_id": 0.0
+    },
+    "column_dtypes": {
+      "patient_id": "str",
+      "full_name": "str",
+      "age": "str",
+      "gender": "str",
+      "blood_type": "str",
+      "diagnosis": "str",
+      "admission_date": "str",
+      "discharge_date": "str",
+      "ward": "str",
+      "doctor_id": "str"
+    },
+    "column_unique_ratios": {
+      "patient_id": 0.5,
+      "full_name": 0.5,
+      "age": 0.067,
+      "gender": 0.003,
+      "blood_type": 0.008,
+      "diagnosis": 0.005,
+      "admission_date": 0.454,
+      "discharge_date": 0.452,
+      "ward": 0.005,
+      "doctor_id": 0.378
+    }
+  },
+  "validator_result": null,
+  "error": null,
+  "assertions": [
+    {
+      "check": "duplicate_detected",
+      "passed": true,
+      "detail": "duplicate_rows=500, near_unique=[]"
+    }
+  ]
+}

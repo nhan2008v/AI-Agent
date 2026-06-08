@@ -1,0 +1,808 @@
+{
+  "dataset_id": "DS09",
+  "file": "C:\\Users\\socia\\OneDrive\\Documents\\GitHub\\Agentic-Data-Cleaner\\tests\\dirty_datasets\\DS09_all_issues.csv",
+  "domain": "Hồ sơ Bệnh viện (Mega Dirty)",
+  "timestamp": "2026-06-07T12:44:47.767380",
+  "status": "PASS",
+  "profiler_result": {
+    "source": "\\tmp\\ade\\uploads\\a6adbc6b90e84f489c729278a478022c.parquet",
+    "total_rows": 1000,
+    "total_columns": 10,
+    "pk_candidates": [],
+    "near_unique_columns": [],
+    "categorical_columns": [
+      "age",
+      "diagnosis_code",
+      "test_result",
+      "doctor_notes"
+    ],
+    "high_null_columns": [],
+    "duplicate_rows": 200,
+    "columns": [
+      {
+        "column_name": "record_id",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 800,
+        "unique_ratio": 0.8,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "REC-000522",
+          "REC-000412",
+          "REC-000072",
+          "REC-000526",
+          "REC-000039",
+          "REC-000239",
+          "REC-000289",
+          "REC-000106",
+          "REC-000550",
+          "REC-000175",
+          "REC-DUP-0066",
+          "REC-000130",
+          "REC-DUP-0184",
+          "REC-000153",
+          "REC-000191",
+          "REC-000016",
+          "REC-000049",
+          "REC-DUP-0172",
+          "REC-000121"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.8000 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 800,
+          "distinct_pct": 0.8,
+          "frequencies": [
+            {
+              "value": "REC-000522",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "REC-000412",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "REC-000072",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "REC-000526",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "REC-000039",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "(Other)",
+              "count": 990,
+              "pct": 0.99
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "patient_id",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 311,
+        "unique_ratio": 0.311,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "PAT-00161",
+          "PAT-00157",
+          "PAT-00037",
+          "PAT-00017",
+          "PAT-00130",
+          "PAT-00252",
+          "PAT-00207",
+          "PAT-00280",
+          "PAT-00346",
+          "PAT-00080",
+          "PAT-00202",
+          "PAT-00388",
+          "PAT-00383",
+          "PAT-00156",
+          "PAT-00132",
+          "PAT-00372",
+          "PAT-00397",
+          "PAT-00129",
+          "PAT-00113"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.3110 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 311,
+          "distinct_pct": 0.311,
+          "frequencies": [
+            {
+              "value": "PAT-00161",
+              "count": 11,
+              "pct": 0.011
+            },
+            {
+              "value": "PAT-00157",
+              "count": 9,
+              "pct": 0.009
+            },
+            {
+              "value": "PAT-00037",
+              "count": 9,
+              "pct": 0.009
+            },
+            {
+              "value": "PAT-00017",
+              "count": 9,
+              "pct": 0.009
+            },
+            {
+              "value": "PAT-00130",
+              "count": 9,
+              "pct": 0.009
+            },
+            {
+              "value": "(Other)",
+              "count": 953,
+              "pct": 0.953
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "patient_name",
+        "dtype": "str",
+        "null_count": 18,
+        "total_rows": 1000,
+        "null_rate": 0.018,
+        "unique_count": 571,
+        "unique_ratio": 0.571,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "unknown",
+          "Ezeuajmg",
+          "Wxwupinv",
+          "Jafvukkz",
+          "Ajwxzmec",
+          "Acylyifg",
+          "Vazxngvp",
+          "Harqsbsi",
+          "Ggpnhxnt",
+          "Jhmluzlk",
+          "Jqtfldqo",
+          "Fujvyylp",
+          "Omsalsvx",
+          "Ysivgymc",
+          "Taxsbxgd",
+          "Pvtreihm",
+          "Uehnlmug",
+          "Dauoddde",
+          "Jpzpfnab",
+          "Iuhbhkih"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Very low null rate (1.80%) — acceptable for most pipelines.",
+          "unique_ratio = 0.5710 — regular column (not a key, not purely categorical).",
+          "Disguised nulls detected: 'unknown' (25 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 982,
+          "values_pct": 0.982,
+          "missing_count": 18,
+          "missing_pct": 0.018,
+          "distinct_count": 571,
+          "distinct_pct": 0.571,
+          "frequencies": [
+            {
+              "value": "unknown",
+              "count": 25,
+              "pct": 0.025
+            },
+            {
+              "value": "Ezeuajmg",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "Wxwupinv",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "Jafvukkz",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "Ajwxzmec",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "(Other)",
+              "count": 945,
+              "pct": 0.945
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "age",
+        "dtype": "str",
+        "null_count": 164,
+        "total_rows": 1000,
+        "null_rate": 0.164,
+        "unique_count": 101,
+        "unique_ratio": 0.101,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "0",
+          "unknown",
+          "60.0",
+          "10.0",
+          "19.0",
+          "43.0",
+          "80.0",
+          "38.0",
+          "62.0",
+          "82.0",
+          "56.0",
+          "70.0",
+          "90.0",
+          "83.0",
+          "89.0",
+          "48.0",
+          "14.0",
+          "34.0",
+          "11.0",
+          "17.0"
+        ],
+        "detected_patterns": [
+          "float_str"
+        ],
+        "interpretation": [
+          "Moderate null rate (16.40%) — consider imputation strategy.",
+          "unique_ratio = 0.1010 (low) — only 101 distinct values --> likely a categorical column (e.g. gender, status, type).",
+          "String pattern detected: ['float_str'] — dtype may be refinable.",
+          "Disguised nulls detected: 'unknown' (25 times), '0' (31 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 836,
+          "values_pct": 0.836,
+          "missing_count": 164,
+          "missing_pct": 0.164,
+          "distinct_count": 101,
+          "distinct_pct": 0.101,
+          "frequencies": [
+            {
+              "value": "0",
+              "count": 31,
+              "pct": 0.031
+            },
+            {
+              "value": "unknown",
+              "count": 25,
+              "pct": 0.025
+            },
+            {
+              "value": "60.0",
+              "count": 17,
+              "pct": 0.017
+            },
+            {
+              "value": "10.0",
+              "count": 16,
+              "pct": 0.016
+            },
+            {
+              "value": "19.0",
+              "count": 16,
+              "pct": 0.016
+            },
+            {
+              "value": "(Other)",
+              "count": 731,
+              "pct": 0.731
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "diagnosis_code",
+        "dtype": "str",
+        "null_count": 170,
+        "total_rows": 1000,
+        "null_rate": 0.17,
+        "unique_count": 5,
+        "unique_ratio": 0.005,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "ICD-005",
+          "ICD-002",
+          "ICD-004",
+          "ICD-001",
+          "ICD-003"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Moderate null rate (17.00%) — consider imputation strategy.",
+          "unique_ratio = 0.0050 (low) — only 5 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 830,
+          "values_pct": 0.83,
+          "missing_count": 170,
+          "missing_pct": 0.17,
+          "distinct_count": 5,
+          "distinct_pct": 0.005,
+          "frequencies": [
+            {
+              "value": "ICD-005",
+              "count": 195,
+              "pct": 0.195
+            },
+            {
+              "value": "ICD-002",
+              "count": 161,
+              "pct": 0.161
+            },
+            {
+              "value": "ICD-004",
+              "count": 159,
+              "pct": 0.159
+            },
+            {
+              "value": "ICD-001",
+              "count": 158,
+              "pct": 0.158
+            },
+            {
+              "value": "ICD-003",
+              "count": 157,
+              "pct": 0.157
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "blood_pressure",
+        "dtype": "str",
+        "null_count": 82,
+        "total_rows": 1000,
+        "null_rate": 0.082,
+        "unique_count": 289,
+        "unique_ratio": 0.289,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "error",
+          "unknown",
+          "104 mmHg",
+          "151 mmHg",
+          "112",
+          "103 mmHg",
+          "151",
+          "150 mmHg",
+          "143",
+          "125 mmHg",
+          "128 mmHg",
+          "137/79",
+          "150",
+          "100 mmHg",
+          "126",
+          "98/75",
+          "115/91",
+          "146/75",
+          "131",
+          "98 mmHg"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Moderate null rate (8.20%) — consider imputation strategy.",
+          "unique_ratio = 0.2890 — regular column (not a key, not purely categorical).",
+          "Disguised nulls detected: 'unknown' (54 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 918,
+          "values_pct": 0.918,
+          "missing_count": 82,
+          "missing_pct": 0.082,
+          "distinct_count": 289,
+          "distinct_pct": 0.289,
+          "frequencies": [
+            {
+              "value": "error",
+              "count": 89,
+              "pct": 0.089
+            },
+            {
+              "value": "unknown",
+              "count": 54,
+              "pct": 0.054
+            },
+            {
+              "value": "104 mmHg",
+              "count": 12,
+              "pct": 0.012
+            },
+            {
+              "value": "151 mmHg",
+              "count": 11,
+              "pct": 0.011
+            },
+            {
+              "value": "112",
+              "count": 11,
+              "pct": 0.011
+            },
+            {
+              "value": "(Other)",
+              "count": 741,
+              "pct": 0.741
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "test_result",
+        "dtype": "str",
+        "null_count": 49,
+        "total_rows": 1000,
+        "null_rate": 0.049,
+        "unique_count": 5,
+        "unique_ratio": 0.005,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "Negative",
+          "Pending",
+          "Positive",
+          "-",
+          "unknown"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Very low null rate (4.90%) — acceptable for most pipelines.",
+          "unique_ratio = 0.0050 (low) — only 5 distinct values --> likely a categorical column (e.g. gender, status, type).",
+          "Disguised nulls detected: 'unknown' (32 times), '-' (53 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 951,
+          "values_pct": 0.951,
+          "missing_count": 49,
+          "missing_pct": 0.049,
+          "distinct_count": 5,
+          "distinct_pct": 0.005,
+          "frequencies": [
+            {
+              "value": "Negative",
+              "count": 305,
+              "pct": 0.305
+            },
+            {
+              "value": "Pending",
+              "count": 304,
+              "pct": 0.304
+            },
+            {
+              "value": "Positive",
+              "count": 257,
+              "pct": 0.257
+            },
+            {
+              "value": "-",
+              "count": 53,
+              "pct": 0.053
+            },
+            {
+              "value": "unknown",
+              "count": 32,
+              "pct": 0.032
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "admission_date",
+        "dtype": "str",
+        "null_count": 59,
+        "total_rows": 1000,
+        "null_rate": 0.059,
+        "unique_count": 494,
+        "unique_ratio": 0.494,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "02/05/2022",
+          "13/07/2019",
+          "14/07/2023",
+          "26/06/2021",
+          "02/05/2020",
+          "20/01/2022",
+          "19/02/2023",
+          "28/11/2022",
+          "27/03/2019",
+          "14/11/2022",
+          "19/11/2021",
+          "05/11/2019",
+          "11/07/2021",
+          "10/11/2021",
+          "09/02/2023",
+          "11/02/2021",
+          "03/09/2024",
+          "25/01/2021",
+          "19/06/2023",
+          "13/10/2022"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Moderate null rate (5.90%) — consider imputation strategy.",
+          "unique_ratio = 0.4940 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 941,
+          "values_pct": 0.941,
+          "missing_count": 59,
+          "missing_pct": 0.059,
+          "distinct_count": 494,
+          "distinct_pct": 0.494,
+          "frequencies": [
+            {
+              "value": "02/05/2022",
+              "count": 6,
+              "pct": 0.006
+            },
+            {
+              "value": "13/07/2019",
+              "count": 6,
+              "pct": 0.006
+            },
+            {
+              "value": "14/07/2023",
+              "count": 6,
+              "pct": 0.006
+            },
+            {
+              "value": "26/06/2021",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "02/05/2020",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "(Other)",
+              "count": 913,
+              "pct": 0.913
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "cost_vnd",
+        "dtype": "str",
+        "null_count": 38,
+        "total_rows": 1000,
+        "null_rate": 0.038,
+        "unique_count": 548,
+        "unique_ratio": 0.548,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "0",
+          "2,923,547 VND",
+          "4,253,144 VND",
+          "3,754,547 VND",
+          "4,357,301 VND",
+          "4,459,512 VND",
+          "4,730,555 VND",
+          "272,284 VND",
+          "3,901,420 VND",
+          "881,035 VND",
+          "4,317,133 VND",
+          "2,438,099 VND",
+          "2,637,024 VND",
+          "470,933 VND",
+          "655,241 VND",
+          "4,246,400 VND",
+          "2,848,971 VND",
+          "2,505,353 VND",
+          "1,467,572 VND",
+          "3,653,956 VND"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Very low null rate (3.80%) — acceptable for most pipelines.",
+          "unique_ratio = 0.5480 — regular column (not a key, not purely categorical).",
+          "Disguised nulls detected: '0' (58 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 962,
+          "values_pct": 0.962,
+          "missing_count": 38,
+          "missing_pct": 0.038,
+          "distinct_count": 548,
+          "distinct_pct": 0.548,
+          "frequencies": [
+            {
+              "value": "0",
+              "count": 58,
+              "pct": 0.058
+            },
+            {
+              "value": "2,923,547 VND",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "4,253,144 VND",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "3,754,547 VND",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "4,357,301 VND",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "(Other)",
+              "count": 892,
+              "pct": 0.892
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "doctor_notes",
+        "dtype": "str",
+        "null_count": 471,
+        "total_rows": 1000,
+        "null_rate": 0.471,
+        "unique_count": 4,
+        "unique_ratio": 0.004,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "critical",
+          "discharged",
+          "stable",
+          "recovering"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "High null rate (47.10%) — column may need significant imputation or removal.",
+          "unique_ratio = 0.0040 (low) — only 4 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 529,
+          "values_pct": 0.529,
+          "missing_count": 471,
+          "missing_pct": 0.471,
+          "distinct_count": 4,
+          "distinct_pct": 0.004,
+          "frequencies": [
+            {
+              "value": "critical",
+              "count": 147,
+              "pct": 0.147
+            },
+            {
+              "value": "discharged",
+              "count": 134,
+              "pct": 0.134
+            },
+            {
+              "value": "stable",
+              "count": 124,
+              "pct": 0.124
+            },
+            {
+              "value": "recovering",
+              "count": 124,
+              "pct": 0.124
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "profiler_summary": {
+    "total_rows": 1000,
+    "total_columns": 10,
+    "duplicate_rows": 200,
+    "pk_candidates": [],
+    "near_unique_columns": [],
+    "categorical_columns": [
+      "age",
+      "diagnosis_code",
+      "test_result",
+      "doctor_notes"
+    ],
+    "high_null_columns": [],
+    "column_null_rates": {
+      "record_id": 0.0,
+      "patient_id": 0.0,
+      "patient_name": 0.018,
+      "age": 0.164,
+      "diagnosis_code": 0.17,
+      "blood_pressure": 0.082,
+      "test_result": 0.049,
+      "admission_date": 0.059,
+      "cost_vnd": 0.038,
+      "doctor_notes": 0.471
+    },
+    "column_dtypes": {
+      "record_id": "str",
+      "patient_id": "str",
+      "patient_name": "str",
+      "age": "str",
+      "diagnosis_code": "str",
+      "blood_pressure": "str",
+      "test_result": "str",
+      "admission_date": "str",
+      "cost_vnd": "str",
+      "doctor_notes": "str"
+    },
+    "column_unique_ratios": {
+      "record_id": 0.8,
+      "patient_id": 0.311,
+      "patient_name": 0.571,
+      "age": 0.101,
+      "diagnosis_code": 0.005,
+      "blood_pressure": 0.289,
+      "test_result": 0.005,
+      "admission_date": 0.494,
+      "cost_vnd": 0.548,
+      "doctor_notes": 0.004
+    }
+  },
+  "validator_result": null,
+  "error": null,
+  "assertions": [
+    {
+      "check": "duplicate_detected",
+      "passed": true,
+      "detail": "duplicate_rows=200, near_unique=[]"
+    },
+    {
+      "check": "null_detected",
+      "passed": true,
+      "detail": "high_null_cols=[]"
+    }
+  ]
+}

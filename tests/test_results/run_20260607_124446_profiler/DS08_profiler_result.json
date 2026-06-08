@@ -1,0 +1,845 @@
+{
+  "dataset_id": "DS08",
+  "file": "C:\\Users\\socia\\OneDrive\\Documents\\GitHub\\Agentic-Data-Cleaner\\tests\\dirty_datasets\\DS08_null_and_typecast.csv",
+  "domain": "IoT Sensor",
+  "timestamp": "2026-06-07T12:44:47.659679",
+  "status": "PASS",
+  "profiler_result": {
+    "source": "\\tmp\\ade\\uploads\\23d5cb83de8e4702bcd1e1313e2fa857.parquet",
+    "total_rows": 1000,
+    "total_columns": 10,
+    "pk_candidates": [
+      "sensor_id"
+    ],
+    "near_unique_columns": [],
+    "categorical_columns": [
+      "device_name",
+      "location",
+      "battery_level"
+    ],
+    "high_null_columns": [
+      "device_name",
+      "location",
+      "pressure_hpa",
+      "co2_ppm",
+      "firmware_version"
+    ],
+    "duplicate_rows": 0,
+    "columns": [
+      {
+        "column_name": "sensor_id",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 1000,
+        "unique_ratio": 1.0,
+        "unique_ratio_category": "primary_key",
+        "sample_values": [
+          "SEN-000001",
+          "SEN-000002",
+          "SEN-000003",
+          "SEN-000004",
+          "SEN-000005",
+          "SEN-000006",
+          "SEN-000007",
+          "SEN-000008",
+          "SEN-000009",
+          "SEN-000010",
+          "SEN-000522",
+          "SEN-000738",
+          "SEN-000741",
+          "SEN-000661",
+          "SEN-000412",
+          "SEN-000679",
+          "SEN-000627",
+          "SEN-000514",
+          "SEN-000860",
+          "SEN-000137"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 1.0 --> every row has a distinct value — strong Primary Key / ID candidate."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 1000,
+          "distinct_pct": 1.0,
+          "frequencies": [
+            {
+              "value": "SEN-000001",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "SEN-000002",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "SEN-000003",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "SEN-000004",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "SEN-000005",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 995,
+              "pct": 0.995
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "device_name",
+        "dtype": "str",
+        "null_count": 559,
+        "total_rows": 1000,
+        "null_rate": 0.559,
+        "unique_count": 10,
+        "unique_ratio": 0.01,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "Device_D",
+          "Device_G",
+          "Device_C",
+          "Device_E",
+          "Device_B",
+          "Device_I",
+          "Device_J",
+          "Device_A",
+          "Device_F",
+          "Device_H"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Critical null rate (55.90%) — column is mostly empty, evaluate dropping it.",
+          "unique_ratio = 0.0100 (low) — only 10 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 441,
+          "values_pct": 0.441,
+          "missing_count": 559,
+          "missing_pct": 0.559,
+          "distinct_count": 10,
+          "distinct_pct": 0.01,
+          "frequencies": [
+            {
+              "value": "Device_D",
+              "count": 48,
+              "pct": 0.048
+            },
+            {
+              "value": "Device_G",
+              "count": 48,
+              "pct": 0.048
+            },
+            {
+              "value": "Device_C",
+              "count": 47,
+              "pct": 0.047
+            },
+            {
+              "value": "Device_E",
+              "count": 46,
+              "pct": 0.046
+            },
+            {
+              "value": "Device_B",
+              "count": 45,
+              "pct": 0.045
+            },
+            {
+              "value": "(Other)",
+              "count": 207,
+              "pct": 0.207
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "location",
+        "dtype": "str",
+        "null_count": 591,
+        "total_rows": 1000,
+        "null_rate": 0.591,
+        "unique_count": 5,
+        "unique_ratio": 0.005,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "Floor 2",
+          "Room B",
+          "Outdoor",
+          "Room A",
+          "Floor 1"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Critical null rate (59.10%) — column is mostly empty, evaluate dropping it.",
+          "unique_ratio = 0.0050 (low) — only 5 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 409,
+          "values_pct": 0.409,
+          "missing_count": 591,
+          "missing_pct": 0.591,
+          "distinct_count": 5,
+          "distinct_pct": 0.005,
+          "frequencies": [
+            {
+              "value": "Floor 2",
+              "count": 89,
+              "pct": 0.089
+            },
+            {
+              "value": "Room B",
+              "count": 85,
+              "pct": 0.085
+            },
+            {
+              "value": "Outdoor",
+              "count": 83,
+              "pct": 0.083
+            },
+            {
+              "value": "Room A",
+              "count": 78,
+              "pct": 0.078
+            },
+            {
+              "value": "Floor 1",
+              "count": 74,
+              "pct": 0.074
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "temperature_c",
+        "dtype": "str",
+        "null_count": 232,
+        "total_rows": 1000,
+        "null_rate": 0.232,
+        "unique_count": 704,
+        "unique_ratio": 0.704,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "#ERR",
+          "ERROR",
+          "TIMEOUT",
+          "140.643 °C",
+          "21.539 °C",
+          "9.27 °C",
+          "31.337 °C",
+          "52.918 °C",
+          "99.614 °C",
+          "41.72 °C",
+          "91.714 °C",
+          "67.732 °C",
+          "45.358 °C",
+          "53.443 °C",
+          "52.219 °C",
+          "73.238 °C",
+          "-1.254 °C",
+          "23.705 °C",
+          "96.55 °C",
+          "128.569 °C"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "High null rate (23.20%) — column may need significant imputation or removal.",
+          "unique_ratio = 0.7040 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 768,
+          "values_pct": 0.768,
+          "missing_count": 232,
+          "missing_pct": 0.232,
+          "distinct_count": 704,
+          "distinct_pct": 0.704,
+          "frequencies": [
+            {
+              "value": "#ERR",
+              "count": 27,
+              "pct": 0.027
+            },
+            {
+              "value": "ERROR",
+              "count": 20,
+              "pct": 0.02
+            },
+            {
+              "value": "TIMEOUT",
+              "count": 18,
+              "pct": 0.018
+            },
+            {
+              "value": "140.643 °C",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "21.539 °C",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "(Other)",
+              "count": 699,
+              "pct": 0.699
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "humidity_pct",
+        "dtype": "str",
+        "null_count": 331,
+        "total_rows": 1000,
+        "null_rate": 0.331,
+        "unique_count": 593,
+        "unique_ratio": 0.593,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "#ERR",
+          "ERROR",
+          "TIMEOUT",
+          "146.036 %",
+          "118.868 %",
+          "141.613 %",
+          "-9.239 %",
+          "-8.263 %",
+          "126.425 %",
+          "99.416 %",
+          "69.906 %",
+          "96.426 %",
+          "74.921 %",
+          "17.254 %",
+          "-0.228 %",
+          "49.805 %",
+          "11.224 %",
+          "79.907 %",
+          "2.253 %",
+          "136.326 %"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "High null rate (33.10%) — column may need significant imputation or removal.",
+          "unique_ratio = 0.5930 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 669,
+          "values_pct": 0.669,
+          "missing_count": 331,
+          "missing_pct": 0.331,
+          "distinct_count": 593,
+          "distinct_pct": 0.593,
+          "frequencies": [
+            {
+              "value": "#ERR",
+              "count": 37,
+              "pct": 0.037
+            },
+            {
+              "value": "ERROR",
+              "count": 24,
+              "pct": 0.024
+            },
+            {
+              "value": "TIMEOUT",
+              "count": 17,
+              "pct": 0.017
+            },
+            {
+              "value": "146.036 %",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "118.868 %",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 588,
+              "pct": 0.588
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "pressure_hpa",
+        "dtype": "str",
+        "null_count": 657,
+        "total_rows": 1000,
+        "null_rate": 0.657,
+        "unique_count": 267,
+        "unique_ratio": 0.267,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "TIMEOUT",
+          "#ERR",
+          "ERROR",
+          "57.487 hPa",
+          "120.354 hPa",
+          "121.743 hPa",
+          "16.213 hPa",
+          "93.762 hPa",
+          "96.633 hPa",
+          "47.458 hPa",
+          "56.826 hPa",
+          "28.538 hPa",
+          "87.237 hPa",
+          "122.938 hPa",
+          "118.72 hPa",
+          "77.735 hPa",
+          "79.47 hPa",
+          "31.825 hPa",
+          "16.488 hPa",
+          "40.426 hPa"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Critical null rate (65.70%) — column is mostly empty, evaluate dropping it.",
+          "unique_ratio = 0.2670 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 343,
+          "values_pct": 0.343,
+          "missing_count": 657,
+          "missing_pct": 0.657,
+          "distinct_count": 267,
+          "distinct_pct": 0.267,
+          "frequencies": [
+            {
+              "value": "TIMEOUT",
+              "count": 28,
+              "pct": 0.028
+            },
+            {
+              "value": "#ERR",
+              "count": 27,
+              "pct": 0.027
+            },
+            {
+              "value": "ERROR",
+              "count": 24,
+              "pct": 0.024
+            },
+            {
+              "value": "57.487 hPa",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "120.354 hPa",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 262,
+              "pct": 0.262
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "co2_ppm",
+        "dtype": "str",
+        "null_count": 696,
+        "total_rows": 1000,
+        "null_rate": 0.696,
+        "unique_count": 222,
+        "unique_ratio": 0.222,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "ERROR",
+          "#ERR",
+          "TIMEOUT",
+          "87.281 ppm",
+          "29.505 ppm",
+          "24.272 ppm",
+          "108.644 ppm",
+          "21.427 ppm",
+          "143.843 ppm",
+          "13.62 ppm",
+          "71.105 ppm",
+          "134.862 ppm",
+          "44.628 ppm",
+          "35.187 ppm",
+          "122.713 ppm",
+          "19.047 ppm",
+          "114.074 ppm",
+          "54.505 ppm",
+          "34.409 ppm",
+          "93.968 ppm"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Critical null rate (69.60%) — column is mostly empty, evaluate dropping it.",
+          "unique_ratio = 0.2220 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 304,
+          "values_pct": 0.304,
+          "missing_count": 696,
+          "missing_pct": 0.696,
+          "distinct_count": 222,
+          "distinct_pct": 0.222,
+          "frequencies": [
+            {
+              "value": "ERROR",
+              "count": 36,
+              "pct": 0.036
+            },
+            {
+              "value": "#ERR",
+              "count": 28,
+              "pct": 0.028
+            },
+            {
+              "value": "TIMEOUT",
+              "count": 21,
+              "pct": 0.021
+            },
+            {
+              "value": "87.281 ppm",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "29.505 ppm",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 217,
+              "pct": 0.217
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "battery_level",
+        "dtype": "str",
+        "null_count": 444,
+        "total_rows": 1000,
+        "null_rate": 0.444,
+        "unique_count": 100,
+        "unique_ratio": 0.1,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "36%",
+          "93%",
+          "85%",
+          "47%",
+          "69%",
+          "1%",
+          "29%",
+          "76%",
+          "83%",
+          "37%",
+          "40%",
+          "95%",
+          "78%",
+          "54%",
+          "44%",
+          "96%",
+          "21%",
+          "43%",
+          "75%"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "High null rate (44.40%) — column may need significant imputation or removal.",
+          "unique_ratio = 0.1000 (low) — only 100 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 556,
+          "values_pct": 0.556,
+          "missing_count": 444,
+          "missing_pct": 0.444,
+          "distinct_count": 100,
+          "distinct_pct": 0.1,
+          "frequencies": [
+            {
+              "value": "36%",
+              "count": 12,
+              "pct": 0.012
+            },
+            {
+              "value": "93%",
+              "count": 11,
+              "pct": 0.011
+            },
+            {
+              "value": "85%",
+              "count": 11,
+              "pct": 0.011
+            },
+            {
+              "value": "47%",
+              "count": 11,
+              "pct": 0.011
+            },
+            {
+              "value": "69%",
+              "count": 10,
+              "pct": 0.01
+            },
+            {
+              "value": "(Other)",
+              "count": 501,
+              "pct": 0.501
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "last_ping",
+        "dtype": "str",
+        "null_count": 229,
+        "total_rows": 1000,
+        "null_rate": 0.229,
+        "unique_count": 654,
+        "unique_ratio": 0.654,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "2022-12-16T00:00:00",
+          "2024-04-18T00:00:00",
+          "2021-12-09T00:00:00",
+          "2022-05-18T00:00:00",
+          "2019-10-04T00:00:00",
+          "2021-04-12T00:00:00",
+          "2024-12-10T00:00:00",
+          "2024-04-09T00:00:00",
+          "2018-08-10T00:00:00",
+          "2020-09-06T00:00:00",
+          "2022-07-16T00:00:00",
+          "2022-03-03T00:00:00",
+          "2022-01-09T00:00:00",
+          "2020-03-19T00:00:00",
+          "2019-05-08T00:00:00",
+          "2019-09-20T00:00:00",
+          "2020-11-19T00:00:00",
+          "2020-08-07T00:00:00",
+          "2024-02-22T00:00:00",
+          "2023-12-24T00:00:00"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "High null rate (22.90%) — column may need significant imputation or removal.",
+          "unique_ratio = 0.6540 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 771,
+          "values_pct": 0.771,
+          "missing_count": 229,
+          "missing_pct": 0.229,
+          "distinct_count": 654,
+          "distinct_pct": 0.654,
+          "frequencies": [
+            {
+              "value": "2022-12-16T00:00:00",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "2024-04-18T00:00:00",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "2021-12-09T00:00:00",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "2022-05-18T00:00:00",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "2019-10-04T00:00:00",
+              "count": 3,
+              "pct": 0.003
+            },
+            {
+              "value": "(Other)",
+              "count": 755,
+              "pct": 0.755
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "firmware_version",
+        "dtype": "str",
+        "null_count": 516,
+        "total_rows": 1000,
+        "null_rate": 0.516,
+        "unique_count": 352,
+        "unique_ratio": 0.352,
+        "unique_ratio_category": "regular",
+        "sample_values": [
+          "v4.7.3",
+          "v4.6.16",
+          "v3.7.17",
+          "v4.9.7",
+          "v4.0.15",
+          "v3.4.0",
+          "v3.8.4",
+          "v2.5.3",
+          "v3.3.19",
+          "v1.9.8",
+          "v2.0.13",
+          "v3.6.15",
+          "v3.4.3",
+          "v2.0.2",
+          "v3.7.10",
+          "v1.3.10",
+          "v2.4.19",
+          "v2.6.15",
+          "v2.9.19"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Critical null rate (51.60%) — column is mostly empty, evaluate dropping it.",
+          "unique_ratio = 0.3520 — regular column (not a key, not purely categorical)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 484,
+          "values_pct": 0.484,
+          "missing_count": 516,
+          "missing_pct": 0.516,
+          "distinct_count": 352,
+          "distinct_pct": 0.352,
+          "frequencies": [
+            {
+              "value": "v4.7.3",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "v4.6.16",
+              "count": 5,
+              "pct": 0.005
+            },
+            {
+              "value": "v3.7.17",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "v4.9.7",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "v4.0.15",
+              "count": 4,
+              "pct": 0.004
+            },
+            {
+              "value": "(Other)",
+              "count": 462,
+              "pct": 0.462
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "profiler_summary": {
+    "total_rows": 1000,
+    "total_columns": 10,
+    "duplicate_rows": 0,
+    "pk_candidates": [
+      "sensor_id"
+    ],
+    "near_unique_columns": [],
+    "categorical_columns": [
+      "device_name",
+      "location",
+      "battery_level"
+    ],
+    "high_null_columns": [
+      "device_name",
+      "location",
+      "pressure_hpa",
+      "co2_ppm",
+      "firmware_version"
+    ],
+    "column_null_rates": {
+      "sensor_id": 0.0,
+      "device_name": 0.559,
+      "location": 0.591,
+      "temperature_c": 0.232,
+      "humidity_pct": 0.331,
+      "pressure_hpa": 0.657,
+      "co2_ppm": 0.696,
+      "battery_level": 0.444,
+      "last_ping": 0.229,
+      "firmware_version": 0.516
+    },
+    "column_dtypes": {
+      "sensor_id": "str",
+      "device_name": "str",
+      "location": "str",
+      "temperature_c": "str",
+      "humidity_pct": "str",
+      "pressure_hpa": "str",
+      "co2_ppm": "str",
+      "battery_level": "str",
+      "last_ping": "str",
+      "firmware_version": "str"
+    },
+    "column_unique_ratios": {
+      "sensor_id": 1.0,
+      "device_name": 0.01,
+      "location": 0.005,
+      "temperature_c": 0.704,
+      "humidity_pct": 0.593,
+      "pressure_hpa": 0.267,
+      "co2_ppm": 0.222,
+      "battery_level": 0.1,
+      "last_ping": 0.654,
+      "firmware_version": 0.352
+    }
+  },
+  "validator_result": null,
+  "error": null,
+  "assertions": [
+    {
+      "check": "null_detected",
+      "passed": true,
+      "detail": "high_null_cols=['device_name', 'location', 'pressure_hpa', 'co2_ppm', 'firmware_version']"
+    }
+  ]
+}

@@ -1,0 +1,761 @@
+{
+  "dataset_id": "DS10",
+  "file": "C:\\Users\\socia\\OneDrive\\Documents\\GitHub\\Agentic-Data-Cleaner\\tests\\dirty_datasets\\DS10_edge_cases.csv",
+  "domain": "Logistics",
+  "timestamp": "2026-06-07T12:44:47.874816",
+  "status": "PASS",
+  "profiler_result": {
+    "source": "\\tmp\\ade\\uploads\\4e5f65c791154815ab194d5399120f41.parquet",
+    "total_rows": 1000,
+    "total_columns": 10,
+    "pk_candidates": [
+      "shipment id",
+      "shipping cost vnd"
+    ],
+    "near_unique_columns": [
+      "weight kg",
+      "tracking number"
+    ],
+    "categorical_columns": [
+      "origin country",
+      "destination country",
+      "carrier name",
+      "estimated days",
+      "status",
+      "insurance required"
+    ],
+    "high_null_columns": [],
+    "duplicate_rows": 0,
+    "columns": [
+      {
+        "column_name": "shipment id",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 1000,
+        "unique_ratio": 1.0,
+        "unique_ratio_category": "primary_key",
+        "sample_values": [
+          "SHP-000001",
+          "SHP-000002",
+          "SHP-000003",
+          "SHP-000004",
+          "SHP-000005",
+          "SHP-000006",
+          "SHP-000007",
+          "SHP-000008",
+          "SHP-000009",
+          "SHP-000010",
+          "SHP-000522",
+          "SHP-000738",
+          "SHP-000741",
+          "SHP-000661",
+          "SHP-000412",
+          "SHP-000679",
+          "SHP-000627",
+          "SHP-000514",
+          "SHP-000860",
+          "SHP-000137"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 1.0 --> every row has a distinct value — strong Primary Key / ID candidate."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 1000,
+          "distinct_pct": 1.0,
+          "frequencies": [
+            {
+              "value": "SHP-000001",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "SHP-000002",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "SHP-000003",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "SHP-000004",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "SHP-000005",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 995,
+              "pct": 0.995
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "origin country",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 1,
+        "unique_ratio": 0.001,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "Vietnam"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0010 (low) — only 1 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 1,
+          "distinct_pct": 0.001,
+          "frequencies": [
+            {
+              "value": "Vietnam",
+              "count": 1000,
+              "pct": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "destination country",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 6,
+        "unique_ratio": 0.006,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "Germany",
+          "Australia",
+          "UK",
+          "USA",
+          "Japan",
+          "Canada"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0060 (low) — only 6 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 6,
+          "distinct_pct": 0.006,
+          "frequencies": [
+            {
+              "value": "Germany",
+              "count": 182,
+              "pct": 0.182
+            },
+            {
+              "value": "Australia",
+              "count": 180,
+              "pct": 0.18
+            },
+            {
+              "value": "UK",
+              "count": 167,
+              "pct": 0.167
+            },
+            {
+              "value": "USA",
+              "count": 163,
+              "pct": 0.163
+            },
+            {
+              "value": "Japan",
+              "count": 159,
+              "pct": 0.159
+            },
+            {
+              "value": "(Other)",
+              "count": 149,
+              "pct": 0.149
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "carrier name",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 2,
+        "unique_ratio": 0.002,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "Carrier A",
+          "Carrier B"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0020 (low) — only 2 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 2,
+          "distinct_pct": 0.002,
+          "frequencies": [
+            {
+              "value": "Carrier A",
+              "count": 512,
+              "pct": 0.512
+            },
+            {
+              "value": "Carrier B",
+              "count": 488,
+              "pct": 0.488
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "weight kg",
+        "dtype": "str",
+        "null_count": 101,
+        "total_rows": 1000,
+        "null_rate": 0.101,
+        "unique_count": 862,
+        "unique_ratio": 0.862,
+        "unique_ratio_category": "near_unique",
+        "sample_values": [
+          "60.67",
+          "61.95",
+          "87.12",
+          "33.62",
+          "4.32",
+          "88.23",
+          "19.32",
+          "15.9",
+          "35.01",
+          "1.7",
+          "16.76",
+          "93.29",
+          "39.9",
+          "65.87",
+          "22.56",
+          "87.1",
+          "61.75",
+          "97.73",
+          "88.68",
+          "53.13"
+        ],
+        "detected_patterns": [
+          "float_str"
+        ],
+        "interpretation": [
+          "Moderate null rate (10.10%) — consider imputation strategy.",
+          "unique_ratio = 0.8620 (< 1.0) — 138 duplicate value(s) detected — investigate for unintended duplicates.",
+          "String pattern detected: ['float_str'] — dtype may be refinable."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 899,
+          "values_pct": 0.899,
+          "missing_count": 101,
+          "missing_pct": 0.101,
+          "distinct_count": 862,
+          "distinct_pct": 0.862,
+          "frequencies": [
+            {
+              "value": "60.67",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "61.95",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "87.12",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "33.62",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "4.32",
+              "count": 2,
+              "pct": 0.002
+            },
+            {
+              "value": "(Other)",
+              "count": 889,
+              "pct": 0.889
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "shipping cost vnd",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 1000,
+        "unique_ratio": 1.0,
+        "unique_ratio_category": "primary_key",
+        "sample_values": [
+          "1,279,265",
+          "1,664,121",
+          "1,582,070",
+          "1,205,384",
+          "1,095,694",
+          "1,395,873",
+          "1,297,024",
+          "1,068,744",
+          "1,954,073",
+          "653,121",
+          "323,711",
+          "866,096",
+          "1,854,278",
+          "274,256",
+          "1,675,979",
+          "401,092",
+          "1,471,806",
+          "1,417,791",
+          "1,209,132",
+          "1,825,529"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 1.0 --> every row has a distinct value — strong Primary Key / ID candidate."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 1000,
+          "distinct_pct": 1.0,
+          "frequencies": [
+            {
+              "value": "1,279,265",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "1,664,121",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "1,582,070",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "1,205,384",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "1,095,694",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 995,
+              "pct": 0.995
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "estimated days",
+        "dtype": "str",
+        "null_count": 55,
+        "total_rows": 1000,
+        "null_rate": 0.055,
+        "unique_count": 30,
+        "unique_ratio": 0.03,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "25.0",
+          "unknown",
+          "28.0",
+          "17.0",
+          "24.0",
+          "8.0",
+          "15.0",
+          "6.0",
+          "20.0",
+          "9.0",
+          "1.0",
+          "27.0",
+          "2.0",
+          "29.0",
+          "21.0",
+          "16.0",
+          "11.0",
+          "3.0",
+          "13.0"
+        ],
+        "detected_patterns": [
+          "float_str"
+        ],
+        "interpretation": [
+          "Moderate null rate (5.50%) — consider imputation strategy.",
+          "unique_ratio = 0.0300 (low) — only 30 distinct values --> likely a categorical column (e.g. gender, status, type).",
+          "String pattern detected: ['float_str'] — dtype may be refinable.",
+          "Disguised nulls detected: 'unknown' (40 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 945,
+          "values_pct": 0.945,
+          "missing_count": 55,
+          "missing_pct": 0.055,
+          "distinct_count": 30,
+          "distinct_pct": 0.03,
+          "frequencies": [
+            {
+              "value": "25.0",
+              "count": 41,
+              "pct": 0.041
+            },
+            {
+              "value": "unknown",
+              "count": 40,
+              "pct": 0.04
+            },
+            {
+              "value": "28.0",
+              "count": 38,
+              "pct": 0.038
+            },
+            {
+              "value": "17.0",
+              "count": 38,
+              "pct": 0.038
+            },
+            {
+              "value": "24.0",
+              "count": 36,
+              "pct": 0.036
+            },
+            {
+              "value": "(Other)",
+              "count": 752,
+              "pct": 0.752
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "tracking number",
+        "dtype": "str",
+        "null_count": 188,
+        "total_rows": 1000,
+        "null_rate": 0.188,
+        "unique_count": 812,
+        "unique_ratio": 0.812,
+        "unique_ratio_category": "near_unique",
+        "sample_values": [
+          "VN997541302VN",
+          "VN732331551VN",
+          "VN797250607VN",
+          "VN980225632VN",
+          "VN683223494VN",
+          "VN391653016VN",
+          "VN301732451VN",
+          "VN708439802VN",
+          "VN849576050VN",
+          "VN710065103VN",
+          "VN882246413VN",
+          "VN817303411VN",
+          "VN413893264VN",
+          "VN314283440VN",
+          "VN229276438VN",
+          "VN182769228VN",
+          "VN855642623VN",
+          "VN325298372VN",
+          "VN865961753VN",
+          "VN946190651VN"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "Moderate null rate (18.80%) — consider imputation strategy.",
+          "unique_ratio = 0.8120 (< 1.0) — 188 duplicate value(s) detected — investigate for unintended duplicates."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 812,
+          "values_pct": 0.812,
+          "missing_count": 188,
+          "missing_pct": 0.188,
+          "distinct_count": 812,
+          "distinct_pct": 0.812,
+          "frequencies": [
+            {
+              "value": "VN997541302VN",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "VN732331551VN",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "VN797250607VN",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "VN980225632VN",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "VN683223494VN",
+              "count": 1,
+              "pct": 0.001
+            },
+            {
+              "value": "(Other)",
+              "count": 807,
+              "pct": 0.807
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "status",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 5,
+        "unique_ratio": 0.005,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "returned",
+          "delivered",
+          "pending",
+          "in_transit",
+          "lost"
+        ],
+        "detected_patterns": [],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0050 (low) — only 5 distinct values --> likely a categorical column (e.g. gender, status, type)."
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 5,
+          "distinct_pct": 0.005,
+          "frequencies": [
+            {
+              "value": "returned",
+              "count": 208,
+              "pct": 0.208
+            },
+            {
+              "value": "delivered",
+              "count": 204,
+              "pct": 0.204
+            },
+            {
+              "value": "pending",
+              "count": 199,
+              "pct": 0.199
+            },
+            {
+              "value": "in_transit",
+              "count": 198,
+              "pct": 0.198
+            },
+            {
+              "value": "lost",
+              "count": 191,
+              "pct": 0.191
+            }
+          ]
+        }
+      },
+      {
+        "column_name": "insurance required",
+        "dtype": "str",
+        "null_count": 0,
+        "total_rows": 1000,
+        "null_rate": 0.0,
+        "unique_count": 8,
+        "unique_ratio": 0.008,
+        "unique_ratio_category": "categorical",
+        "sample_values": [
+          "0",
+          "1",
+          "True",
+          "NO",
+          "False",
+          "no",
+          "YES",
+          "yes"
+        ],
+        "detected_patterns": [
+          "boolean_str"
+        ],
+        "interpretation": [
+          "No missing values — column is complete.",
+          "unique_ratio = 0.0080 (low) — only 8 distinct values --> likely a categorical column (e.g. gender, status, type).",
+          "String pattern detected: ['boolean_str'] — dtype may be refinable.",
+          "Disguised nulls detected: '0' (150 times)"
+        ],
+        "numeric_stats": null,
+        "categorical_stats": {
+          "values_count": 1000,
+          "values_pct": 1.0,
+          "missing_count": 0,
+          "missing_pct": 0.0,
+          "distinct_count": 8,
+          "distinct_pct": 0.008,
+          "frequencies": [
+            {
+              "value": "0",
+              "count": 150,
+              "pct": 0.15
+            },
+            {
+              "value": "1",
+              "count": 137,
+              "pct": 0.137
+            },
+            {
+              "value": "True",
+              "count": 129,
+              "pct": 0.129
+            },
+            {
+              "value": "NO",
+              "count": 124,
+              "pct": 0.124
+            },
+            {
+              "value": "False",
+              "count": 119,
+              "pct": 0.119
+            },
+            {
+              "value": "(Other)",
+              "count": 341,
+              "pct": 0.341
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "profiler_summary": {
+    "total_rows": 1000,
+    "total_columns": 10,
+    "duplicate_rows": 0,
+    "pk_candidates": [
+      "shipment id",
+      "shipping cost vnd"
+    ],
+    "near_unique_columns": [
+      "weight kg",
+      "tracking number"
+    ],
+    "categorical_columns": [
+      "origin country",
+      "destination country",
+      "carrier name",
+      "estimated days",
+      "status",
+      "insurance required"
+    ],
+    "high_null_columns": [],
+    "column_null_rates": {
+      "shipment id": 0.0,
+      "origin country": 0.0,
+      "destination country": 0.0,
+      "carrier name": 0.0,
+      "weight kg": 0.101,
+      "shipping cost vnd": 0.0,
+      "estimated days": 0.055,
+      "tracking number": 0.188,
+      "status": 0.0,
+      "insurance required": 0.0
+    },
+    "column_dtypes": {
+      "shipment id": "str",
+      "origin country": "str",
+      "destination country": "str",
+      "carrier name": "str",
+      "weight kg": "str",
+      "shipping cost vnd": "str",
+      "estimated days": "str",
+      "tracking number": "str",
+      "status": "str",
+      "insurance required": "str"
+    },
+    "column_unique_ratios": {
+      "shipment id": 1.0,
+      "origin country": 0.001,
+      "destination country": 0.006,
+      "carrier name": 0.002,
+      "weight kg": 0.862,
+      "shipping cost vnd": 1.0,
+      "estimated days": 0.03,
+      "tracking number": 0.812,
+      "status": 0.005,
+      "insurance required": 0.008
+    }
+  },
+  "validator_result": null,
+  "error": null,
+  "assertions": [
+    {
+      "check": "null_detected",
+      "passed": true,
+      "detail": "high_null_cols=[]"
+    }
+  ]
+}
